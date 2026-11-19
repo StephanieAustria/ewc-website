@@ -1,0 +1,668 @@
+[
+ {
+  "file": "MHG - Monthly Game Performance w-e 2026-11-15.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-11-15",
+  "start": "2026-10-19",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Monthly Game Performance, 19 Oct 2026 – 15 Nov 2026"
+ },
+ {
+  "file": "MHG - Weekly Game Performance w-e 2026-11-15.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-11-15",
+  "start": "2026-11-09",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Weekly Game Performance, w/e 15 Nov 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Monthly Game Performance w-e 2026-11-15.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-11-15",
+  "start": "2026-10-19",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Monthly Game Performance, 19 Oct 2026 – 15 Nov 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Weekly Game Performance w-e 2026-11-15.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-11-15",
+  "start": "2026-11-09",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Weekly Game Performance, w/e 15 Nov 2026"
+ },
+ {
+  "file": "MHG - Monthly Game Performance w-e 2026-11-08.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-11-08",
+  "start": "2026-10-12",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Monthly Game Performance, 12 Oct 2026 – 8 Nov 2026"
+ },
+ {
+  "file": "MHG - Weekly Game Performance w-e 2026-11-08.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-11-08",
+  "start": "2026-11-02",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Weekly Game Performance, w/e 8 Nov 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Monthly Game Performance w-e 2026-11-08.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-11-08",
+  "start": "2026-10-12",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Monthly Game Performance, 12 Oct 2026 – 8 Nov 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Weekly Game Performance w-e 2026-11-08.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-11-08",
+  "start": "2026-11-02",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Weekly Game Performance, w/e 8 Nov 2026"
+ },
+ {
+  "file": "MHG - Monthly Game Performance w-e 2026-11-01.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-11-01",
+  "start": "2026-10-05",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Monthly Game Performance, 5 Oct 2026 – 1 Nov 2026"
+ },
+ {
+  "file": "MHG - Weekly Game Performance w-e 2026-11-01.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-11-01",
+  "start": "2026-10-26",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Weekly Game Performance, w/e 1 Nov 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Monthly Game Performance w-e 2026-11-01.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-11-01",
+  "start": "2026-10-05",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Monthly Game Performance, 5 Oct 2026 – 1 Nov 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Weekly Game Performance w-e 2026-11-01.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-11-01",
+  "start": "2026-10-26",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Weekly Game Performance, w/e 1 Nov 2026"
+ },
+ {
+  "file": "MHG - Monthly Game Performance w-e 2026-10-25.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-10-25",
+  "start": "2026-09-28",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Monthly Game Performance, 28 Sept 2026 – 25 Oct 2026"
+ },
+ {
+  "file": "MHG - Weekly Game Performance w-e 2026-10-25.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-10-25",
+  "start": "2026-10-19",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Weekly Game Performance, w/e 25 Oct 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Monthly Game Performance w-e 2026-10-25.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-10-25",
+  "start": "2026-09-28",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Monthly Game Performance, 28 Sept 2026 – 25 Oct 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Weekly Game Performance w-e 2026-10-25.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-10-25",
+  "start": "2026-10-19",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Weekly Game Performance, w/e 25 Oct 2026"
+ },
+ {
+  "file": "MHG - Monthly Game Performance w-e 2026-10-18.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-10-18",
+  "start": "2026-09-21",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Monthly Game Performance, 21 Sept 2026 – 18 Oct 2026"
+ },
+ {
+  "file": "MHG - Weekly Game Performance w-e 2026-10-18.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-10-18",
+  "start": "2026-10-12",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Weekly Game Performance, w/e 18 Oct 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Monthly Game Performance w-e 2026-10-18.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-10-18",
+  "start": "2026-09-21",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Monthly Game Performance, 21 Sept 2026 – 18 Oct 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Weekly Game Performance w-e 2026-10-18.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-10-18",
+  "start": "2026-10-12",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Weekly Game Performance, w/e 18 Oct 2026"
+ },
+ {
+  "file": "MHG - Monthly Game Performance w-e 2026-10-11.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-10-11",
+  "start": "2026-09-14",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Monthly Game Performance, 14 Sept 2026 – 11 Oct 2026"
+ },
+ {
+  "file": "MHG - Weekly Game Performance w-e 2026-10-11.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-10-11",
+  "start": "2026-10-05",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Weekly Game Performance, w/e 11 Oct 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Monthly Game Performance w-e 2026-10-11.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-10-11",
+  "start": "2026-09-14",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Monthly Game Performance, 14 Sept 2026 – 11 Oct 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Weekly Game Performance w-e 2026-10-11.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-10-11",
+  "start": "2026-10-05",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Weekly Game Performance, w/e 11 Oct 2026"
+ },
+ {
+  "file": "MHG - Monthly Game Performance w-e 2026-10-04.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-10-04",
+  "start": "2026-09-07",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Monthly Game Performance, 7 Sept 2026 – 4 Oct 2026"
+ },
+ {
+  "file": "MHG - Weekly Game Performance w-e 2026-10-04.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-10-04",
+  "start": "2026-09-28",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Weekly Game Performance, w/e 4 Oct 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Monthly Game Performance w-e 2026-10-04.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-10-04",
+  "start": "2026-09-07",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Monthly Game Performance, 7 Sept 2026 – 4 Oct 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Weekly Game Performance w-e 2026-10-04.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-10-04",
+  "start": "2026-09-28",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Weekly Game Performance, w/e 4 Oct 2026"
+ },
+ {
+  "file": "MHG - Monthly Game Performance w-e 2026-09-27.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-09-27",
+  "start": "2026-08-31",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Monthly Game Performance, 31 Aug 2026 – 27 Sept 2026"
+ },
+ {
+  "file": "MHG - Weekly Game Performance w-e 2026-09-27.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-09-27",
+  "start": "2026-09-21",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Weekly Game Performance, w/e 27 Sept 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Monthly Game Performance w-e 2026-09-27.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-09-27",
+  "start": "2026-08-31",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Monthly Game Performance, 31 Aug 2026 – 27 Sept 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Weekly Game Performance w-e 2026-09-27.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-09-27",
+  "start": "2026-09-21",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Weekly Game Performance, w/e 27 Sept 2026"
+ },
+ {
+  "file": "MHG - Monthly Game Performance w-e 2026-09-20.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-09-20",
+  "start": "2026-08-24",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Monthly Game Performance, 24 Aug 2026 – 20 Sept 2026"
+ },
+ {
+  "file": "MHG - Weekly Game Performance w-e 2026-09-20.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-09-20",
+  "start": "2026-09-14",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Weekly Game Performance, w/e 20 Sept 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Monthly Game Performance w-e 2026-09-20.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-09-20",
+  "start": "2026-08-24",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Monthly Game Performance, 24 Aug 2026 – 20 Sept 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Weekly Game Performance w-e 2026-09-20.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-09-20",
+  "start": "2026-09-14",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Weekly Game Performance, w/e 20 Sept 2026"
+ },
+ {
+  "file": "MHG - Monthly Game Performance w-e 2026-09-13.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-09-13",
+  "start": "2026-08-17",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Monthly Game Performance, 17 Aug 2026 – 13 Sept 2026"
+ },
+ {
+  "file": "MHG - Weekly Game Performance w-e 2026-09-13.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-09-13",
+  "start": "2026-09-07",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Weekly Game Performance, w/e 13 Sept 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Monthly Game Performance w-e 2026-09-13.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-09-13",
+  "start": "2026-08-17",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Monthly Game Performance, 17 Aug 2026 – 13 Sept 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Weekly Game Performance w-e 2026-09-13.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-09-13",
+  "start": "2026-09-07",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Weekly Game Performance, w/e 13 Sept 2026"
+ },
+ {
+  "file": "MHG - Monthly Game Performance w-e 2026-09-06.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-09-06",
+  "start": "2026-08-10",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Monthly Game Performance, 10 Aug 2026 – 6 Sept 2026"
+ },
+ {
+  "file": "MHG - Weekly Game Performance w-e 2026-09-06.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-09-06",
+  "start": "2026-08-31",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Weekly Game Performance, w/e 6 Sept 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Monthly Game Performance w-e 2026-09-06.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-09-06",
+  "start": "2026-08-10",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Monthly Game Performance, 10 Aug 2026 – 6 Sept 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Weekly Game Performance w-e 2026-09-06.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-09-06",
+  "start": "2026-08-31",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Weekly Game Performance, w/e 6 Sept 2026"
+ },
+ {
+  "file": "MHG - Monthly Game Performance w-e 2026-08-23.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-08-23",
+  "start": "2026-07-27",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Monthly Game Performance, 27 July 2026 – 23 Aug 2026"
+ },
+ {
+  "file": "MHG - Weekly Game Performance w-e 2026-08-23.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-08-23",
+  "start": "2026-08-17",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Weekly Game Performance, w/e 23 Aug 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Monthly Game Performance w-e 2026-08-23.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-08-23",
+  "start": "2026-07-27",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Monthly Game Performance, 27 July 2026 – 23 Aug 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Weekly Game Performance w-e 2026-08-23.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-08-23",
+  "start": "2026-08-17",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Weekly Game Performance, w/e 23 Aug 2026"
+ },
+ {
+  "file": "MHG - Monthly Game Performance w-e 2026-08-16.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-08-16",
+  "start": "2026-07-20",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Monthly Game Performance, 20 July 2026 – 16 Aug 2026"
+ },
+ {
+  "file": "MHG - Weekly Game Performance w-e 2026-08-16.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-08-16",
+  "start": "2026-08-10",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Weekly Game Performance, w/e 16 Aug 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Monthly Game Performance w-e 2026-08-16.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-08-16",
+  "start": "2026-07-20",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Monthly Game Performance, 20 July 2026 – 16 Aug 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Weekly Game Performance w-e 2026-08-16.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-08-16",
+  "start": "2026-08-10",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Weekly Game Performance, w/e 16 Aug 2026"
+ },
+ {
+  "file": "MHG - Monthly Game Performance w-e 2026-08-09.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-08-09",
+  "start": "2026-07-13",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Monthly Game Performance, 13 July 2026 – 9 Aug 2026"
+ },
+ {
+  "file": "MHG - Weekly Game Performance w-e 2026-08-09.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-08-09",
+  "start": "2026-08-03",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Weekly Game Performance, w/e 9 Aug 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Monthly Game Performance w-e 2026-08-09.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-08-09",
+  "start": "2026-07-13",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Monthly Game Performance, 13 July 2026 – 9 Aug 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Weekly Game Performance w-e 2026-08-09.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-08-09",
+  "start": "2026-08-03",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Weekly Game Performance, w/e 9 Aug 2026"
+ },
+ {
+  "file": "MHG - Monthly Game Performance w-e 2026-08-02.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-08-02",
+  "start": "2026-07-06",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Monthly Game Performance, 6 July 2026 – 2 Aug 2026"
+ },
+ {
+  "file": "MHG - Weekly Game Performance w-e 2026-08-02.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-08-02",
+  "start": "2026-07-27",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Weekly Game Performance, w/e 2 Aug 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Monthly Game Performance w-e 2026-08-02.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-08-02",
+  "start": "2026-07-06",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Monthly Game Performance, 6 July 2026 – 2 Aug 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Weekly Game Performance w-e 2026-08-02.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-08-02",
+  "start": "2026-07-27",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Weekly Game Performance, w/e 2 Aug 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Monthly Game Performance w-e 2026-07-26.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-07-26",
+  "start": "2026-06-29",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Monthly Game Performance, 29 June 2026 – 26 July 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Weekly Game Performance w-e 2026-07-26.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-07-26",
+  "start": "2026-07-20",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Weekly Game Performance, w/e 26 July 2026"
+ },
+ {
+  "file": "MHG - Monthly Game Performance w-e 2026-07-19.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-07-19",
+  "start": "2026-06-22",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Monthly Game Performance, 22 June 2026 – 19 July 2026"
+ },
+ {
+  "file": "MHG - Weekly Game Performance w-e 2026-07-19.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-07-19",
+  "start": "2026-07-13",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Weekly Game Performance, w/e 19 July 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Monthly Game Performance w-e 2026-07-19.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-07-19",
+  "start": "2026-06-22",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Monthly Game Performance, 22 June 2026 – 19 July 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Weekly Game Performance w-e 2026-07-19.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-07-19",
+  "start": "2026-07-13",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Weekly Game Performance, w/e 19 July 2026"
+ },
+ {
+  "file": "MHG - Monthly Game Performance w-e 2026-07-12.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-07-12",
+  "start": "2026-06-15",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Monthly Game Performance, 15 June 2026 – 12 July 2026"
+ },
+ {
+  "file": "MHG - Weekly Game Performance w-e 2026-07-12.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-07-12",
+  "start": "2026-07-06",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Weekly Game Performance, w/e 12 July 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Monthly Game Performance w-e 2026-07-12.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-07-12",
+  "start": "2026-06-15",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Monthly Game Performance, 15 June 2026 – 12 July 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Weekly Game Performance w-e 2026-07-12.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-07-12",
+  "start": "2026-07-06",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Weekly Game Performance, w/e 12 July 2026"
+ },
+ {
+  "file": "MHG - Monthly Game Performance w-e 2026-07-05.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-07-05",
+  "start": "2026-06-08",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Monthly Game Performance, 8 June 2026 – 5 July 2026"
+ },
+ {
+  "file": "MHG - Weekly Game Performance w-e 2026-07-05.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-07-05",
+  "start": "2026-06-29",
+  "group": "Marlow Hotel Group",
+  "venue": null,
+  "title": "Marlow Hotel Group — Weekly Game Performance, w/e 5 July 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Monthly Game Performance w-e 2026-07-05.xlsx",
+  "category": "gp_monthly",
+  "period": "2026-07-05",
+  "start": "2026-06-08",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Monthly Game Performance, 8 June 2026 – 5 July 2026"
+ },
+ {
+  "file": "Vauxhall Inn - Weekly Game Performance w-e 2026-07-05.xlsx",
+  "category": "gp_weekly",
+  "period": "2026-07-05",
+  "start": "2026-06-29",
+  "group": "Orion Hotel Group",
+  "venue": "Vauxhall Inn",
+  "title": "Vauxhall Inn — Weekly Game Performance, w/e 5 July 2026"
+ }
+]

@@ -1,0 +1,21 @@
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-brand">
+      <a class="brand" href="<%= href('/') %>"><img class="lockup" src="<%= href('/img/ewc-lockup.png') %>" alt="Elson White Consulting" width="223" height="52"></a>
+      <em>Gaming Consultancy &amp;<br>Performance Insights</em>
+    </div>
+    <div class="foot-right">
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="<%= href('/') %>">Home</a><a href="<%= href('/about') %>">About Us</a><a href="<%= href('/services') %>">Services</a>
+        <a href="<%= href('/team') %>">Our Team</a><a href="<%= href('/contact') %>">Contact</a><a class="gold" href="<%= href('/login') %>">Member Login</a>
+      </nav>
+      <a class="foot-mail" href="mailto:admin@elsonwhiteconsulting.com.au"><%- icon('mail') %>admin@elsonwhiteconsulting.com.au</a>
+      <p class="copy">&copy; <span data-year><%= year %></span> Elson White Consulting. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<% if (preview) { %><script src="js/preview-api.js"></script><% } %>
+<script src="<%= href('/js/site.js') %>"></script>
+</body>
+</html>

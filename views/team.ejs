@@ -1,0 +1,43 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<section class="hero small">
+  <div class="wrap"><div class="hero-copy">
+    <p class="eyebrow">Our Team</p>
+    <h1>Experienced Leaders in <em>Gaming &amp; Hospitality</em></h1>
+    <p>A combined approach of industry experience, strategic insight, and a hands-on understanding of what drives venue performance.</p>
+  </div></div>
+  <%- include('partials/swoosh', { fill: '#F7F5F0' }) %>
+</section>
+
+<section class="section light">
+  <div class="wrap">
+    <div class="section-title"><h2>Meet Our Leadership Team</h2></div>
+    <div class="people">
+      <%- include('partials/person', { initials: 'CE', name: 'Candice Elson-White', role: 'Managing Director' }) %>
+      <%- include('partials/person', { initials: 'LE', name: 'Lex Elson-White', role: 'Director' }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section charcoal">
+  <div class="wrap">
+    <div class="section-title"><h2>Our Combined Expertise</h2></div>
+    <div class="why">
+      <div><%- icon('chart') %><b>Gaming Performance &amp; Analysis</b></div>
+      <div><%- icon('gear') %><b>Venue Operations &amp; Management</b></div>
+      <div><%- icon('layers') %><b>Strategy &amp; Business Improvement</b></div>
+      <div><%- icon('floorplan') %><b>Gaming Room Design &amp; Optimisation</b></div>
+      <div><%- icon('people') %><b>Industry Insights &amp; Trends</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="cta-copy"><h2>Let's Work Together.</h2><p>Talk to our team about how Elson White Consulting can support your venue and gaming operations.</p></div>
+    <a class="btn btn-gold" href="<%= href('/contact') %>"><%- icon('mail') %>Contact Our Team</a>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

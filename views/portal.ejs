@@ -1,0 +1,41 @@
+<%- include('partials/head', { portal: true }) %>
+<body class="portal-body">
+<a class="skip" href="#view">Skip to content</a>
+<div class="p-shell">
+  <aside class="p-side" id="side">
+    <a class="brand" href="<%= href('/') %>"><img class="lockup" src="<%= href('/img/ewc-lockup-dark.png') %>" alt="Elson White Consulting" width="204" height="44"></a>
+    <nav class="p-nav" aria-label="Portal">
+      <a href="#/dashboard" data-r="dashboard"><%- icon('layers') %>Dashboard</a>
+      <a href="#/game-performance" data-r="game-performance"><%- icon('analysis') %>Game Performance</a>
+      <a href="#/figures" data-r="figures"><%- icon('chart') %>Gaming Figures</a>
+      <a href="#/rankings" data-r="rankings"><%- icon('trophy') %>Monthly Rankings</a>
+      <a href="#/reports" data-r="reports"><%- icon('doc') %>Reports &amp; Resources</a>
+      <a href="#/ask" data-r="ask"><%- icon('mail') %>Ask a Question</a>
+      <div class="p-admin" hidden>
+        <p class="p-navlabel">Administration</p>
+        <a href="#/admin/data" data-r="admin/data"><%- icon('gear') %>Data &amp; Uploads</a>
+        <a href="#/admin/users" data-r="admin/users"><%- icon('people') %>Members</a>
+        <a href="#/admin/enquiries" data-r="admin/enquiries"><%- icon('send') %>Enquiries</a>
+        <p class="p-navlabel p-tools-label">My Tools</p>
+        <% toolList.forEach(function (t) { %><a href="#/tools/<%= t.slug %>" data-r="tools/<%= t.slug %>" data-tool="<%= t.slug %>" hidden><%- icon(t.icon) %><%= t.nav %></a>
+        <% }) %>
+      </div>
+      <p class="p-navlabel">Account</p>
+      <a href="#/account" data-r="account"><%- icon('lock') %>My Account</a>
+    </nav>
+    <form method="post" action="<%= href('/logout') %>" class="p-logout" data-logout><button type="submit" class="btn btn-outline btn-sm"><%- icon('login') %>Sign out</button></form>
+  </aside>
+  <div class="p-main">
+    <header class="p-top">
+      <button class="p-menu" type="button" aria-controls="side" aria-expanded="false">Menu</button>
+      <div class="p-who"><span class="p-avatar"><%- icon('user') %></span><span><b id="who-name">…</b><small id="who-scope"></small></span></div>
+    </header>
+    <% if (preview) { %><div class="p-preview">Preview copy for review — sign-in here is simulated in your browser. The real website checks passwords on the server and keeps every venue's data private.</div><% } %>
+    <main id="view" class="p-view" tabindex="-1"><div class="p-loading">Loading your portal…</div></main>
+  </div>
+</div>
+<% if (preview) { %><script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script><script src="preview-data.js"></script><script src="js/preview-api.js"></script>
+<% } else { %><script src="/vendor/chart.umd.min.js"></script><% } %>
+<script src="<%= href('/js/portal.js') %>"></script>
+</body>
+</html>

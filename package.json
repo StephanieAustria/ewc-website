@@ -1,0 +1,33 @@
+{
+  "name": "ewc-website",
+  "version": "1.0.0",
+  "description": "Elson White Consulting website and member portal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node scripts/seed.js",
+    "build:preview": "node scripts/build-preview.js",
+    "test": "node scripts/smoke-test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^13.0.3",
+    "chart.js": "^4.6.1",
+    "cookie-parser": "^1.4.7",
+    "ejs": "^7.0.2",
+    "exceljs": "^4.4.0",
+    "express": "^5.3.0",
+    "helmet": "^8.3.0",
+    "multer": "^2.5.0",
+    "nodemailer": "^10.3.1",
+    "pdf-parse": "^1.1.1",
+    "xlsx": "^0.18.5"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,52 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+<% const services = [
+  ['chart', 'Gaming Advisory & Consultancy', 'Strategic advice and operational support for gaming venues and operators.', 'Gaming Consultancy'],
+  ['analysis', 'Gaming Performance Analysis', 'Weekly and monthly analysis of gaming machine performance, trends, and opportunities.', 'Gaming Performance Reporting'],
+  ['doc', 'Gaming Figures & Reporting', 'Regular reporting to help clients monitor gaming figures and understand performance.', 'Gaming Performance Reporting'],
+  ['trophy', 'Gaming Rankings & Benchmarking', 'Monthly rankings and comparisons to provide clients with a clearer view of performance.', 'Gaming Performance Reporting'],
+  ['floorplan', 'Gaming Room Design & Floorplan', 'Advice on gaming room layouts, machine positioning, and floorplan optimisation.', 'Gaming Room Design'],
+  ['gear', 'Gaming Operations Support', 'Ongoing support and practical recommendations to assist with gaming operations.', 'Gaming Consultancy'],
+]; %>
+
+<section class="hero small">
+  <div class="wrap"><div class="hero-copy">
+    <p class="eyebrow">Our Services</p>
+    <h1>Comprehensive Gaming Consultancy <em>for Your Venue</em></h1>
+    <p>A complete range of gaming consultancy services, delivering practical advice, performance insights, and ongoing support to help you maximise your gaming operation.</p>
+  </div></div>
+  <%- include('partials/swoosh', { fill: '#F7F5F0' }) %>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="svc-grid">
+      <% services.forEach(([ic, t, d]) => { %>
+        <div><%- icon(ic) %><h3><%= t %></h3><p><%= d %></p></div>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="wrap">
+    <div class="section-title"><h2>Our Services in Detail</h2></div>
+    <div class="svc-detail">
+      <% services.forEach(([ic, t, d, type]) => { %>
+        <div class="svc-item">
+          <div><h3><%= t %></h3><p><%= d %></p></div>
+          <a class="btn btn-outline btn-sm" href="<%= href('/contact') %>?type=<%= encodeURIComponent(type) %>&amp;subject=<%= encodeURIComponent(t) %>">Enquire about this <%- icon('chevron') %></a>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="cta-copy"><h2>Let's Discuss How We Can Support Your Venue.</h2><p>Get in touch to find out how our gaming consultancy services can help your business perform at its best.</p></div>
+    <a class="btn btn-gold" href="<%= href('/contact') %>"><%- icon('mail') %>Contact Our Team</a>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

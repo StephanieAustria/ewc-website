@@ -1,0 +1,46 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<section class="hero small">
+  <div class="wrap"><div class="hero-copy">
+    <p class="eyebrow">About Us</p>
+    <h1>Industry Expertise. <em>Practical Insights.</em></h1>
+    <p>Elson White Consulting is a specialised gaming consultancy supporting venue owners and operators through industry expertise, performance analysis, and practical business insights.</p>
+  </div></div>
+  <%- include('partials/swoosh', { fill: '#F7F5F0' }) %>
+</section>
+
+<section class="section">
+  <div class="wrap about-grid">
+    <div>
+      <div class="section-title" style="margin-bottom:20px"><h2>Our Company</h2></div>
+      <p>We understand the importance of making informed decisions in a competitive hospitality environment.</p>
+      <p>Our approach combines industry knowledge with data-driven reporting to help clients understand their gaming performance, identify opportunities, and make decisions that support their venue's objectives.</p>
+      <p>Through tailored consultancy and ongoing reporting, we aim to provide clients with the insights and support they need to manage their gaming operations with confidence.</p>
+    </div>
+    <div>
+      <div class="feature"><%- icon('chart') %><div><h3>Our Approach</h3><p>Practical, data-led advice tailored to each venue — weekly figures, machine performance and monthly rankings read together.</p></div></div>
+      <div class="feature"><%- icon('layers') %><div><h3>Our Expertise</h3><p>Gaming operations, electronic gaming machine performance analysis, gaming room design and venue support.</p></div></div>
+      <div class="feature"><%- icon('people') %><div><h3>Our Commitment</h3><p>Ongoing reporting and support so venue owners and operators can manage their gaming operations with confidence.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="wrap">
+    <div class="section-title"><h2>Our Leadership</h2></div>
+    <div class="people">
+      <%- include('partials/person', { initials: 'CE', name: 'Candice Elson-White', role: 'Managing Director' }) %>
+      <%- include('partials/person', { initials: 'LE', name: 'Lex Elson-White', role: 'Director' }) %>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="cta-copy"><h2>Let's Talk About Your Venue.</h2><p>Whether you're looking for gaming consultancy, performance reporting, or strategic support, our team is here to help.</p></div>
+    <a class="btn btn-gold" href="<%= href('/contact') %>"><%- icon('mail') %>Contact Our Team</a>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gaming Figures | Elson White Consulting</title>
+<script src="__BASE__dashboard/react.production.min.js"></script>
+<script src="__BASE__dashboard/react-dom.production.min.js"></script>
+<script src="__BASE__dashboard/dc-runtime.js"></script>
+
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/3f58f771.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/7901ed41.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/51de9e5c.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/7c127605.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/66fb8936.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/3f58f771.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/7901ed41.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/51de9e5c.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/7c127605.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/66fb8936.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/3f58f771.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/7901ed41.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/51de9e5c.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/7c127605.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/66fb8936.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/5e48117d.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/df85ec3c.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/2af5a1d8.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/26af92cb.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/50c70b58.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/b2f661cb.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/081cf230.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/0cc745d7.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/195d0165.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/2aba5d37.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/67207992.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/1fb20879.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/4c660c4d.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/1194d803.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/d859206f.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/79855cf1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/44d6a417.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/9b0746e3.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/c8045e2b.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/bd952e0c.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/f600a358.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/1a0c5ad3.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/6cd8c7c3.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/1d4c286d.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/e3c3c224.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/fb2b4632.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/f600a358.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/1a0c5ad3.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/6cd8c7c3.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/1d4c286d.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/e3c3c224.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/fb2b4632.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/f600a358.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/1a0c5ad3.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/6cd8c7c3.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/1d4c286d.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/e3c3c224.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/fb2b4632.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/f600a358.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/1a0c5ad3.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/6cd8c7c3.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/1d4c286d.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/e3c3c224.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/fb2b4632.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/f600a358.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/1a0c5ad3.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/6cd8c7c3.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/1d4c286d.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/e3c3c224.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("__BASE__dashboard/fonts/fb2b4632.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+__DATA_SCRIPTS__
+<style>
+  :root{--k171310:#171310;--k423818:#423818;--k070605:#070605;--k0a0806:#0a0806;--k050403:#050403;--k0b0907:#0b0907;--k0b0a07:#0b0a07;--k0c0a07:#0c0a07;--k0e0c08:#0e0c08;--k0f0c08:#0f0c08;--k100d09:#100d09;--k100b02:#100b02;--k15120c:#15120c;--k15110a:#15110a;--k1a160e:#1a160e;--k1c1810:#1c1810;--k1c170e:#1c170e;--k1c1710:#1c1710;--k1d1810:#1d1810;--k221c12:#221c12;--k2a2316:#2a2316;--k2a2418:#2a2418;--k2c2619:#2c2619;--k3a3018:#3a3018;--k4a3c1e:#4a3c1e;--k4a4234:#4a4234;--k5c5340:#5c5340;--kefe7d4:#efe7d4;--kf3ecd9:#f3ecd9;--ke2dac4:#e2dac4;--kdcd4bf:#dcd4bf;--kd4ccb8:#d4ccb8;--kc2bba8:#c2bba8;--kb8b0a0:#b8b0a0;--ka89878:#a89878;--k9a9078:#9a9078;--k8a8068:#8a8068;--k8a7f66:#8a7f66;--k6e6655:#6e6655;--ke7d3a1:#e7d3a1;--kd9bd76:#d9bd76;--kc2a14e:#c2a14e;--kcbae6a:#cbae6a;--k9a7d34:#9a7d34;--k7d6027:#7d6027;--kdfe9d8:#dfe9d8;--kcdd9e6:#cdd9e6;--ke0c3b2:#e0c3b2;--ka9c4e0:#a9c4e0;--k9aa7b5:#9aa7b5;--k54cf90:#54cf90;--k86a9cf:#86a9cf;--ke08a6a:#e08a6a;--khdr:rgba(7,6,5,.94);--kshadow:rgba(0,0,0,.5);}
+  html.ewc-light{--k171310:#f1ebde;--k423818:#b9a57a;--k070605:#f4efe4;--k0a0806:#fbf8f1;--k050403:#efe9dc;--k0b0907:#f7f2e7;--k0b0a07:#f3ede0;--k0c0a07:#f6f1e6;--k0e0c08:#f3ede1;--k0f0c08:#efe8d8;--k100d09:#ffffff;--k100b02:#fdf7e6;--k15120c:#efe8d9;--k15110a:#ece4d2;--k1a160e:#e6ddca;--k1c1810:#e4dbc7;--k1c170e:#f3e6c4;--k1c1710:#ebe3d2;--k1d1810:#e8dfcc;--k221c12:#ddd2bb;--k2a2316:#d6cab0;--k2a2418:#cfc3a8;--k2c2619:#d2c6ac;--k3a3018:#c4b490;--k4a3c1e:#a88f5c;--k4a4234:#9a8e76;--k5c5340:#857a63;--kefe7d4:#1a150c;--kf3ecd9:#16110a;--ke2dac4:#2b2418;--kdcd4bf:#322a1c;--kd4ccb8:#3a3222;--kc2bba8:#4a4232;--kb8b0a0:#554c3c;--ka89878:#6a5c40;--k9a9078:#6e6450;--k8a8068:#6f6550;--k8a7f66:#726750;--k6e6655:#857a64;--ke7d3a1:#7a5a1a;--kd9bd76:#9a7424;--kc2a14e:#a8842e;--kcbae6a:#b8923e;--k9a7d34:#8a6a22;--k7d6027:#7a5a20;--kdfe9d8:#1f4a30;--kcdd9e6:#1f3a5a;--ke0c3b2:#7a3a22;--ka9c4e0:#2f5a8a;--k9aa7b5:#4a5a6e;--k54cf90:#1f9a5c;--k86a9cf:#3f6a9a;--ke08a6a:#c0582f;--khdr:rgba(251,248,241,.94);--kshadow:rgba(90,70,30,.14);}
+  html,body{transition:background .2s;}
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--k070605);}
+  body{font-family:'Manrope',system-ui,sans-serif;-webkit-font-smoothing:antialiased;color:var(--kefe7d4);}
+  ::selection{background:var(--kc2a14e);color:var(--k0a0806);}
+  .ewc-scroll::-webkit-scrollbar{width:6px;}
+  .ewc-scroll::-webkit-scrollbar-thumb{background:var(--k2a2418);border-radius:8px;}
+  .ewc-scroll::-webkit-scrollbar-track{background:transparent;}
+  .ewc-tbl th,.ewc-tbl td{white-space:nowrap;}
+</style>
+</helmet>
+
+<div style="min-height:100vh;background:var(--k070605);font-family:'Manrope',sans-serif;color:var(--kefe7d4);">
+
+  <!-- ===================== HEADER ===================== -->
+  <header style="position:sticky;top:0;z-index:40;background:var(--khdr);backdrop-filter:blur(10px);border-bottom:1px solid var(--k1d1810);display:flex;align-items:center;gap:18px;padding:0 34px;height:76px;">
+    <img src="__BASE__img/ewc-mark.png" alt="Elson White Consulting" style="height:48px;width:48px;object-fit:contain;flex:none;">
+    <div style="display:flex;flex-direction:column;line-height:1.2;flex:none;white-space:nowrap;border-left:1px solid var(--k221c12);padding-left:18px;">
+      <span style="font-weight:700;font-size:14px;letter-spacing:.28em;color:var(--kd9bd76);text-transform:uppercase;">Elson White Consulting</span>
+      <span style="font-size:10.5px;letter-spacing:.2em;color:var(--k8a8068);text-transform:uppercase;margin-top:4px;font-weight:600;">Executive Performance Dashboard</span>
+    </div>
+    <div style="flex:1;"></div>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <button sc-camel-on-click="{{ toggleTheme }}" title="Switch light / dark mode" style="cursor:pointer;display:inline-flex;align-items:center;gap:8px;font-family:'Manrope',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ka89878);background:transparent;border:1px solid var(--k2a2316);border-radius:30px;padding:7px 14px;" style-hover="border-color:var(--kc2a14e);color:var(--kd9bd76);">
+        <span style="width:10px;height:10px;border-radius:50%;border:1.5px solid var(--kc2a14e);background:linear-gradient(90deg,var(--kc2a14e) 50%,transparent 50%);"></span>
+        {{ themeLabel }}
+      </button>
+      <span style="display:inline-flex;align-items:center;gap:7px;font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ka89878);border:1px solid var(--k2a2316);border-radius:30px;padding:7px 14px;">
+        <svg width="12" height="12" sc-camel-view-box="0 0 24 24" fill="none" stroke="var(--kc2a14e)" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>
+        Confidential
+      </span>
+      <div style="width:40px;height:40px;border-radius:50%;border:1px solid var(--k423818);background:radial-gradient(circle at 35% 30%,var(--kcbae6a),var(--k7d6027));display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:16px;color:var(--k100b02);">EW</div>
+    </div>
+  </header>
+
+  <sc-if value="{{ loading }}" hint-placeholder-val="{{ false }}">
+    <div style="display:flex;align-items:center;justify-content:center;height:60vh;color:var(--k6e6655);font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;">Establishing secure session…</div>
+  </sc-if>
+
+  <!-- ===================== DASHBOARD ===================== -->
+  <sc-if value="{{ ready }}" hint-placeholder-val="{{ true }}">
+  <main style="max-width:1400px;margin:0 auto;padding:32px 34px 74px;">
+
+    <!-- title + filters -->
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:22px;">
+      <div style="min-width:max-content;">
+        <div style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--k9a7d34);font-weight:700;margin-bottom:8px;white-space:nowrap;">{{ eyebrow }}</div>
+        <h1 style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:46px;line-height:1.02;margin:0;letter-spacing:.005em;color:var(--kf3ecd9);white-space:nowrap;">{{ hotelName }}</h1>
+        <div style="display:flex;align-items:center;gap:13px;margin-top:11px;">
+          <span style="font-size:13.5px;color:var(--ka89878);letter-spacing:.02em;font-weight:600;white-space:nowrap;">{{ subtitle }}</span>
+          <span style="width:3px;height:3px;border-radius:50%;background:var(--k4a4234);flex:none;"></span>
+          <span style="font-size:13.5px;color:var(--ka89878);letter-spacing:.02em;font-weight:600;white-space:nowrap;">{{ periodLabel }}</span>
+        </div>
+      </div>
+      <!-- year + quarter inline -->
+      <div style="display:flex;gap:18px;align-items:flex-end;">
+        <div>
+          <div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--k8a8068);margin-bottom:9px;font-weight:700;">Year</div>
+          <div style="display:flex;gap:6px;">
+            <sc-for list="{{ yearOpts }}" as="o" hint-placeholder-count="5">
+              <button sc-camel-on-click="{{ o.onClick }}" style="cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:700;padding:9px 13px;border-radius:8px;border:1px solid {{ o.bd }};background:{{ o.bg }};color:{{ o.fg }};transition:all .15s ease;">{{ o.label }}</button>
+            </sc-for>
+          </div>
+        </div>
+        <div style="width:1px;align-self:stretch;background:var(--k221c12);"></div>
+        <div>
+          <div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--k8a8068);margin-bottom:9px;font-weight:700;">Quarter</div>
+          <div style="display:flex;gap:6px;">
+            <sc-for list="{{ quarterOpts }}" as="o" hint-placeholder-count="5">
+              <button sc-camel-on-click="{{ o.onClick }}" style="cursor:pointer;font-family:'Manrope',sans-serif;font-size:12.5px;font-weight:700;padding:9px 14px;border-radius:8px;border:1px solid {{ o.bd }};background:{{ o.bg }};color:{{ o.fg }};transition:all .15s ease;">{{ o.label }}</button>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- venue filter -->
+    <sc-if value="{{ multiVenue }}" hint-placeholder-val="{{ true }}">
+    <div style="display:flex;align-items:center;gap:14px;background:linear-gradient(165deg,var(--k100d09),var(--k0b0907));border:1px solid var(--k221c12);border-radius:12px;padding:14px 18px;margin-bottom:20px;">
+      <span style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--k8a8068);flex:none;font-weight:700;">Venue</span>
+      <div style="display:flex;flex-wrap:wrap;gap:7px;">
+        <sc-for list="{{ venueOpts }}" as="o" hint-placeholder-count="5">
+          <button sc-camel-on-click="{{ o.onClick }}" style="cursor:pointer;font-family:'Manrope',sans-serif;font-size:12.5px;font-weight:700;padding:8px 14px;border-radius:8px;border:1px solid {{ o.bd }};background:{{ o.bg }};color:{{ o.fg }};transition:all .15s ease;letter-spacing:.01em;">{{ o.label }}</button>
+        </sc-for>
+      </div>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ hasCoverageNote }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;align-items:center;gap:10px;background:rgba(224,138,106,.07);border:1px solid rgba(224,138,106,.30);border-radius:10px;padding:10px 14px;margin-bottom:14px;">
+        <span style="font-family:'Manrope',sans-serif;font-size:9.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--k0a0806);background:var(--ke08a6a);border-radius:4px;padding:3px 7px;flex:none;">Coverage</span>
+        <span style="font-size:12.5px;color:var(--ke0c3b2);font-weight:600;line-height:1.45;">{{ coverageNote }}</span>
+      </div>
+    </sc-if>
+
+    <!-- ===== KPI COMPARISON CARDS (prev=blue, current=green) ===== -->
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:16px;">
+      <sc-for list="{{ kpiCards }}" as="k" hint-placeholder-count="4">
+        <div style="background:linear-gradient(168deg,var(--k100d09),var(--k0b0907));border:1px solid {{ k.border }};border-radius:14px;padding:20px 22px;position:relative;overflow:hidden;">
+          <div style="position:absolute;top:0;left:0;width:100%;height:3px;background:{{ k.bar }};"></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
+            <span style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ka89878);font-weight:700;">{{ k.label }}</span>
+            <span style="font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:{{ k.tagColor }};border:1px solid {{ k.tagBorder }};border-radius:20px;padding:2px 8px;">{{ k.period }}</span>
+          </div>
+          <div style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:33px;line-height:1;color:{{ k.valueColor }};font-variant-numeric:tabular-nums;letter-spacing:.005em;">{{ k.value }}</div>
+          <div style="display:flex;align-items:center;gap:7px;margin-top:12px;min-height:16px;">
+            <span style="font-size:12px;font-weight:700;color:{{ k.dColor }};font-family:'IBM Plex Mono',monospace;">{{ k.delta }}</span>
+            <span style="font-size:11px;color:var(--k8a8068);font-weight:600;">{{ k.note }}</span>
+          </div>
+          <sc-if value="{{ k.showToggle }}" hint-placeholder-val="{{ false }}">
+            <button sc-camel-on-click="{{ k.onToggle }}" style="cursor:pointer;margin-top:12px;font-family:'Manrope',sans-serif;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:20px;border:1px solid var(--k3a3018);background:transparent;color:var(--kd9bd76);">{{ k.toggleLabel }}</button>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+
+    <sc-if value="{{ showWeeks }}" hint-placeholder-val="{{ false }}">
+      <div style="background:linear-gradient(168deg,var(--k100d09),var(--k0a0806));border:1px solid var(--k2a2316);border-radius:14px;padding:20px 24px;margin-bottom:16px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:12px;flex-wrap:wrap;">
+          <div>
+            <div style="font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--k9a7d34);margin-bottom:6px;font-weight:700;">Week-by-Week Comparison</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:22px;color:var(--kf3ecd9);line-height:1;">Weekly Profit · {{ year }} vs {{ prevYear }}</div>
+          </div>
+          <button sc-camel-on-click="{{ closeWeeks }}" style="cursor:pointer;font-family:'Manrope',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:8px 14px;border-radius:8px;border:1px solid var(--k2c2619);background:var(--k15120c);color:var(--kc2bba8);">Close</button>
+        </div>
+        <div class="ewc-scroll" style="max-height:320px;overflow-y:auto;border-top:1px solid var(--k1a160e);">
+          <sc-raw-table style="width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;">
+            <sc-raw-thead>
+              <sc-raw-tr>
+                <sc-raw-th style="text-align:left;position:sticky;top:0;background:var(--k0a0806);font-family:'Manrope',sans-serif;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--k8a8068);font-weight:700;padding:10px 8px;">Week</sc-raw-th>
+                <sc-raw-th style="text-align:right;position:sticky;top:0;background:var(--k0a0806);font-size:11px;color:var(--k54cf90);font-weight:700;padding:10px 8px;">{{ year }}</sc-raw-th>
+                <sc-raw-th style="text-align:right;position:sticky;top:0;background:var(--k0a0806);font-size:11px;color:var(--k86a9cf);font-weight:700;padding:10px 8px;">{{ prevYear }}</sc-raw-th>
+                <sc-raw-th style="text-align:right;position:sticky;top:0;background:var(--k0a0806);font-family:'Manrope',sans-serif;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ka89878);font-weight:700;padding:10px 8px;">+/−</sc-raw-th>
+              </sc-raw-tr>
+            </sc-raw-thead>
+            <sc-raw-tbody>
+              <sc-for list="{{ weeksRows }}" as="w" hint-placeholder-count="13">
+                <sc-raw-tr style="border-top:1px solid var(--k1a160e);">
+                  <sc-raw-td style="padding:9px 8px;font-size:12px;color:var(--kc2bba8);font-weight:600;">{{ w.label }}</sc-raw-td>
+                  <sc-raw-td style="padding:9px 8px;text-align:right;font-size:12.5px;color:var(--kdfe9d8);font-weight:700;">{{ w.curVal }}</sc-raw-td>
+                  <sc-raw-td style="padding:9px 8px;text-align:right;font-size:12.5px;color:var(--kcdd9e6);font-weight:600;">{{ w.prevVal }}</sc-raw-td>
+                  <sc-raw-td style="padding:9px 8px;text-align:right;font-size:12px;font-weight:700;color:{{ w.diffColor }};">{{ w.diff }}</sc-raw-td>
+                </sc-raw-tr>
+              </sc-for>
+            </sc-raw-tbody>
+          </sc-raw-table>
+        </div>
+      </div>
+    </sc-if>
+
+    <!-- ===== ROW: MULTI-YEAR (8) + NET&TURNOVER (4) ===== -->
+    <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-bottom:16px;">
+
+      <!-- MULTI-YEAR TURNOVER COMPARISON (PRIMARY) -->
+      <div style="grid-column:span 8;background:linear-gradient(168deg,var(--k100d09),var(--k0a0806));border:1px solid var(--k2a2316);border-radius:16px;padding:24px 28px 18px;">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:8px;gap:16px;">
+          <div style="flex:none;">
+            <div style="font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--k9a7d34);margin-bottom:8px;white-space:nowrap;font-weight:700;">Multi-Year Comparison · Full Year</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:27px;color:var(--kf3ecd9);line-height:1;white-space:nowrap;">Weekly Turnover by Year</div>
+          </div>
+          <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:flex-end;padding-top:2px;position:relative;">
+            <sc-for list="{{ yearLegend }}" as="y" hint-placeholder-count="5">
+              <span sc-camel-on-click="{{ y.onClick }}" style="cursor:pointer;user-select:none;display:flex;align-items:center;gap:7px;font-size:13px;color:var(--ke2dac4);font-family:'IBM Plex Mono',monospace;font-weight:700;white-space:nowrap;opacity:{{ y.opacity }};">
+                <span style="width:17px;height:4px;border-radius:2px;background:{{ y.color }};display:inline-block;"></span>{{ y.year }}
+              </span>
+            </sc-for>
+            <button sc-camel-on-click="{{ toggleRange }}" style="cursor:pointer;display:flex;align-items:center;gap:5px;font-family:'Manrope',sans-serif;font-size:11px;font-weight:700;letter-spacing:.05em;padding:6px 11px;border-radius:20px;border:1px solid var(--k3a3018);background:{{ rangeBtnBg }};color:var(--kd9bd76);white-space:nowrap;">Range ▾</button>
+            <sc-if value="{{ rangeOpen }}" hint-placeholder-val="{{ false }}">
+              <div style="position:absolute;top:calc(100% + 8px);right:0;z-index:20;width:290px;background:var(--k100d09);border:1px solid var(--k3a3018);border-radius:12px;box-shadow:0 16px 40px rgba(0,0,0,.6);padding:16px;">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+                  <span style="font-family:'Manrope',sans-serif;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--k9a7d34);font-weight:700;">Per-Year Range</span>
+                  <button sc-camel-on-click="{{ resetRanges }}" style="cursor:pointer;font-family:'Manrope',sans-serif;font-size:10px;font-weight:700;color:var(--k8a8068);background:transparent;border:none;text-decoration:underline;">Reset</button>
+                </div>
+                <sc-for list="{{ rangeRows }}" as="rr" hint-placeholder-count="5">
+                  <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+                    <span style="width:13px;height:13px;border-radius:50%;background:{{ rr.color }};display:inline-block;flex:none;"></span>
+                    <span style="width:38px;font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-weight:700;color:var(--ke2dac4);flex:none;">{{ rr.year }}</span>
+                    <sc-raw-select value="{{ rr.fromVal }}" sc-camel-on-change="{{ rr.onFromChange }}" style="flex:1;background:var(--k171310);border:1px solid var(--k2c2619);border-radius:6px;color:var(--kc2bba8);font-size:12px;padding:5px 6px;font-family:'IBM Plex Mono',monospace;">
+                      <sc-for list="{{ rr.fromOpts }}" as="o" hint-placeholder-count="12">
+                        <option value="{{ o.val }}">{{ o.label }}</option>
+                      </sc-for>
+                    </sc-raw-select>
+                    <span style="color:var(--k5c5340);font-size:11px;flex:none;">to</span>
+                    <sc-raw-select value="{{ rr.toVal }}" sc-camel-on-change="{{ rr.onToChange }}" style="flex:1;background:var(--k171310);border:1px solid var(--k2c2619);border-radius:6px;color:var(--kc2bba8);font-size:12px;padding:5px 6px;font-family:'IBM Plex Mono',monospace;">
+                      <sc-for list="{{ rr.toOpts }}" as="o" hint-placeholder-count="12">
+                        <option value="{{ o.val }}">{{ o.label }}</option>
+                      </sc-for>
+                    </sc-raw-select>
+                  </div>
+                </sc-for>
+              </div>
+            </sc-if>
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;margin-top:16px;">
+          <div style="width:56px;display:flex;flex-direction:column;justify-content:space-between;height:300px;">
+            <sc-for list="{{ yAxisLabels }}" as="l" hint-placeholder-count="7">
+              <span style="font-size:11.5px;color:var(--k9a9078);font-family:'IBM Plex Mono',monospace;text-align:right;line-height:1;font-weight:700;">{{ l }}</span>
+            </sc-for>
+          </div>
+          <div style="flex:1;position:relative;">
+            <svg sc-camel-view-box="0 0 1000 300" sc-camel-preserve-aspect-ratio="none" style="width:100%;height:300px;display:block;">
+              <sc-for list="{{ yGrid }}" as="g" hint-placeholder-count="7">
+                <line x1="0" y1="{{ g.y }}" x2="1000" y2="{{ g.y }}" stroke="var(--k1a160e)" stroke-width="1"></line>
+              </sc-for>
+              <sc-for list="{{ multiYearLines }}" as="ln" hint-placeholder-count="5">
+                <path d="{{ ln.path }}" fill="none" stroke="{{ ln.color }}" stroke-width="{{ ln.width }}" stroke-opacity="{{ ln.op }}" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round">
+              </path></sc-for>
+              <sc-if value="{{ hoverVisible }}" hint-placeholder-val="{{ false }}">
+                <line x1="{{ hoverGuideX }}" y1="0" x2="{{ hoverGuideX }}" y2="300" stroke="var(--k6e6655)" stroke-width="1" stroke-dasharray="3,3" vector-effect="non-scaling-stroke"></line>
+                <sc-for list="{{ hoverDots }}" as="d" hint-placeholder-count="5">
+                  <circle cx="{{ d.cx }}" cy="{{ d.cy }}" r="4.5" fill="{{ d.color }}" stroke="var(--k0a0806)" stroke-width="1.5"></circle>
+                </sc-for>
+              </sc-if>
+              <rect x="0" y="0" width="1000" height="300" fill="transparent" sc-camel-on-mouse-move="{{ onChartMove }}" sc-camel-on-mouse-leave="{{ onChartLeave }}" style="cursor:crosshair;pointer-events:all;"></rect>
+            </svg>
+            <sc-if value="{{ hoverVisible }}" hint-placeholder-val="{{ false }}">
+              <div style="position:absolute;left:{{ tooltipLeftPx }};top:{{ tooltipTopPx }};transform:translate(-50%,0);pointer-events:none;background:var(--k0e0c08);border:1px solid var(--k3a3018);border-radius:8px;padding:10px 13px;min-width:132px;box-shadow:0 10px 26px rgba(0,0,0,.55);z-index:5;">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;color:var(--kd9bd76);text-align:center;margin-bottom:8px;white-space:nowrap;">{{ tooltipHeaderLabel }}</div>
+                <sc-for list="{{ hoverTooltipRows }}" as="r" hint-placeholder-count="5">
+                  <div style="display:flex;align-items:center;gap:14px;justify-content:space-between;padding:2.5px 0;">
+                    <span style="display:flex;align-items:center;gap:6px;">
+                      <span style="width:8px;height:8px;border-radius:50%;background:{{ r.color }};display:inline-block;flex:none;"></span>
+                      <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;color:var(--kc2bba8);white-space:nowrap;">{{ r.year }}</span>
+                    </span>
+                    <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;color:{{ r.color }};white-space:nowrap;">{{ r.val }}</span>
+                  </div>
+                </sc-for>
+              </div>
+            </sc-if>
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;margin-top:9px;">
+          <div style="width:56px;"></div>
+          <div style="flex:1;display:flex;justify-content:space-between;">
+            <sc-for list="{{ monthTicks }}" as="m" hint-placeholder-count="12">
+              <span style="font-size:11px;color:var(--ka89878);font-family:'Manrope',sans-serif;letter-spacing:.04em;font-weight:700;">{{ m }}</span>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+
+      <!-- TOTAL NET & TURNOVER COMPARISON -->
+      <div style="grid-column:span 4;background:linear-gradient(168deg,var(--k100d09),var(--k0a0806));border:1px solid var(--k221c12);border-radius:16px;padding:24px 26px 22px;display:flex;flex-direction:column;">
+        <div style="margin-bottom:6px;">
+          <div style="font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--k9a7d34);margin-bottom:8px;font-weight:700;">Net &amp; Turnover</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:27px;color:var(--kf3ecd9);line-height:1;">{{ year }} vs {{ prevYear }}</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:24px;margin-top:22px;flex:1;justify-content:center;">
+          <sc-for list="{{ compareGroups }}" as="g" hint-placeholder-count="2">
+            <div>
+              <div style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ka89878);margin-bottom:12px;font-weight:700;">{{ g.label }}</div>
+              <div style="display:flex;flex-direction:column;gap:9px;">
+                <div>
+                  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+                    <span style="font-size:11px;color:var(--k54cf90);font-family:'IBM Plex Mono',monospace;font-weight:700;">{{ year }}</span>
+                    <span style="font-size:13px;color:var(--kdfe9d8);font-family:'IBM Plex Mono',monospace;font-weight:700;">{{ g.curVal }}</span>
+                  </div>
+                  <div style="height:12px;background:var(--k15120c);border-radius:4px;overflow:hidden;"><div style="height:100%;width:{{ g.curW }};background:linear-gradient(90deg,#2f9d66,var(--k54cf90));border-radius:4px;"></div></div>
+                </div>
+                <div>
+                  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+                    <span style="font-size:11px;color:var(--k86a9cf);font-family:'IBM Plex Mono',monospace;font-weight:700;">{{ prevYear }}</span>
+                    <span style="font-size:13px;color:var(--kcdd9e6);font-family:'IBM Plex Mono',monospace;font-weight:700;">{{ g.prevVal }}</span>
+                  </div>
+                  <div style="height:12px;background:var(--k15120c);border-radius:4px;overflow:hidden;"><div style="height:100%;width:{{ g.prevW }};background:linear-gradient(90deg,#4f74a0,var(--k86a9cf));border-radius:4px;"></div></div>
+                </div>
+              </div>
+              <div style="font-size:11.5px;color:{{ g.dColor }};font-family:'IBM Plex Mono',monospace;margin-top:8px;font-weight:700;">{{ g.delta }} vs {{ prevYear }}</div>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--k1a160e);padding-top:14px;margin-top:18px;">
+          <span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ka89878);font-weight:700;">RTV Yield</span>
+          <span style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:24px;color:var(--ke7d3a1);">{{ rtv }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== ROW: MONTHLY PIES (3+3) + WEEKLY TREND (6) ===== -->
+    <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-bottom:16px;">
+
+      <!-- TURNOVER BY MONTH PIE -->
+      <div style="grid-column:span 3;background:linear-gradient(168deg,var(--k100d09),var(--k0a0806));border:1px solid var(--k221c12);border-radius:16px;padding:22px 22px;">
+        <div style="font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--k9a7d34);margin-bottom:6px;font-weight:700;">Turnover by {{ partKindSingular }}</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:26px;color:var(--kf3ecd9);line-height:1;font-variant-numeric:tabular-nums;">{{ pieTOTotal }}</div>
+        <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--k8a8068);margin-bottom:14px;margin-top:5px;font-weight:600;">Total · {{ periodLabel }}</div>
+        <div style="width:140px;height:140px;margin:0 auto 16px;">
+          <svg sc-camel-view-box="0 0 120 120" style="width:140px;height:140px;display:block;filter:drop-shadow(0 6px 14px var(--kshadow));">
+            <sc-for list="{{ pieTO }}" as="s" hint-placeholder-count="3">
+              <path d="{{ s.d }}" fill="{{ s.color }}" stroke="var(--k0a0806)" stroke-width="1.2"></path>
+            </sc-for>
+          </svg>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <sc-for list="{{ pieTO }}" as="s" hint-placeholder-count="3">
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span style="width:10px;height:10px;border-radius:2px;background:{{ s.color }};flex:none;"></span>
+              <span style="font-size:12px;color:var(--kdcd4bf);flex:1;font-weight:700;">{{ s.key }}</span>
+              <span style="font-size:10px;color:var(--k8a8068);font-family:'IBM Plex Mono',monospace;font-weight:600;">{{ s.pct }}</span>
+              <span style="font-size:11.5px;color:var(--kb8b0a0);font-family:'IBM Plex Mono',monospace;width:82px;text-align:right;font-weight:700;">{{ s.val }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+
+      <!-- PROFIT BY MONTH PIE -->
+      <div style="grid-column:span 3;background:linear-gradient(168deg,var(--k100d09),var(--k0a0806));border:1px solid var(--k221c12);border-radius:16px;padding:22px 22px;">
+        <div style="font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--k9a7d34);margin-bottom:6px;font-weight:700;">Profit by {{ partKindSingular }}</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:26px;color:var(--kf3ecd9);line-height:1;font-variant-numeric:tabular-nums;">{{ piePRTotal }}</div>
+        <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--k8a8068);margin-bottom:14px;margin-top:5px;font-weight:600;">Total · {{ periodLabel }}</div>
+        <div style="width:140px;height:140px;margin:0 auto 16px;">
+          <svg sc-camel-view-box="0 0 120 120" style="width:140px;height:140px;display:block;filter:drop-shadow(0 6px 14px var(--kshadow));">
+            <sc-for list="{{ piePR }}" as="s" hint-placeholder-count="3">
+              <path d="{{ s.d }}" fill="{{ s.color }}" stroke="var(--k0a0806)" stroke-width="1.2"></path>
+            </sc-for>
+          </svg>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <sc-for list="{{ piePR }}" as="s" hint-placeholder-count="3">
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span style="width:10px;height:10px;border-radius:2px;background:{{ s.color }};flex:none;"></span>
+              <span style="font-size:12px;color:var(--kdcd4bf);flex:1;font-weight:700;">{{ s.key }}</span>
+              <span style="font-size:10px;color:var(--k8a8068);font-family:'IBM Plex Mono',monospace;font-weight:600;">{{ s.pct }}</span>
+              <span style="font-size:11.5px;color:var(--kb8b0a0);font-family:'IBM Plex Mono',monospace;width:82px;text-align:right;font-weight:700;">{{ s.val }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+
+      <!-- WEEKLY TURNOVER TREND -->
+      <div style="grid-column:span 6;background:linear-gradient(168deg,var(--k100d09),var(--k0a0806));border:1px solid var(--k221c12);border-radius:16px;padding:22px 26px 16px;">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:6px;">
+          <div>
+            <div style="font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--k9a7d34);margin-bottom:8px;font-weight:700;">Turnover Trend</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:24px;color:var(--kf3ecd9);line-height:1;">Weekly Trading · {{ periodLabel }}</div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:24px;color:var(--ke7d3a1);line-height:1;">{{ trendMax }}</div>
+            <div style="font-size:10px;color:var(--k8a8068);letter-spacing:.14em;text-transform:uppercase;margin-top:5px;font-weight:700;">Peak week</div>
+          </div>
+        </div>
+        <svg sc-camel-view-box="0 0 1000 260" sc-camel-preserve-aspect-ratio="none" style="width:100%;height:188px;display:block;margin-top:10px;">
+          <defs>
+            <linearGradient id="ewcTO" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="var(--kc2a14e)" stop-opacity="0.26"></stop>
+              <stop offset="1" stop-color="var(--kc2a14e)" stop-opacity="0"></stop>
+            </linearGradient>
+          </defs>
+          <line x1="0" y1="40" x2="1000" y2="40" stroke="var(--k1c1810)" stroke-width="1"></line>
+          <line x1="0" y1="130" x2="1000" y2="130" stroke="var(--k1c1810)" stroke-width="1"></line>
+          <line x1="0" y1="220" x2="1000" y2="220" stroke="var(--k1c1810)" stroke-width="1"></line>
+          <path d="{{ toArea }}" fill="url(#ewcTO)"></path>
+          <path d="{{ toLine }}" fill="none" stroke="var(--kd9bd76)" stroke-width="2.2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"></path>
+        </svg>
+        <div style="display:flex;justify-content:space-between;margin-top:8px;padding-top:9px;border-top:1px solid var(--k1a160e);">
+          <sc-for list="{{ trendTicks }}" as="t" hint-placeholder-count="4">
+            <span style="font-size:11px;color:var(--ka89878);font-family:'IBM Plex Mono',monospace;letter-spacing:.04em;font-weight:700;">{{ t }}</span>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== QUARTERLY PERFORMANCE SUMMARY TABLE ===== -->
+    <div style="background:linear-gradient(168deg,var(--k100d09),var(--k0a0806));border:1px solid var(--k2a2316);border-radius:16px;padding:26px 28px 22px;margin-bottom:16px;">
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:20px;">
+        <div>
+          <div style="font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--k9a7d34);margin-bottom:8px;font-weight:700;">Quarterly Performance Summary</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:27px;color:var(--kf3ecd9);line-height:1;">{{ subtitle }}</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+          <span style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--k8a8068);font-weight:700;">From</span>
+          <div style="display:flex;gap:5px;">
+            <sc-for list="{{ qFromOpts }}" as="o" hint-placeholder-count="4">
+              <button sc-camel-on-click="{{ o.onClick }}" style="cursor:pointer;font-family:'Manrope',sans-serif;font-size:12px;font-weight:700;padding:7px 11px;border-radius:7px;border:1px solid {{ o.bd }};background:{{ o.bg }};color:{{ o.fg }};">{{ o.label }}</button>
+            </sc-for>
+          </div>
+          <span style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--k8a8068);font-weight:700;">To</span>
+          <div style="display:flex;gap:5px;">
+            <sc-for list="{{ qToOpts }}" as="o" hint-placeholder-count="4">
+              <button sc-camel-on-click="{{ o.onClick }}" style="cursor:pointer;font-family:'Manrope',sans-serif;font-size:12px;font-weight:700;padding:7px 11px;border-radius:7px;border:1px solid {{ o.bd }};background:{{ o.bg }};color:{{ o.fg }};">{{ o.label }}</button>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:20px;">
+        <sc-for list="{{ summaryYears }}" as="yb" hint-placeholder-count="4">
+          <div style="border:1px solid var(--k221c12);border-radius:12px;overflow:hidden;">
+            <div style="display:grid;grid-template-columns:200px repeat(4,minmax(0,1fr));">
+              <div style="background:var(--k050403);display:flex;align-items:center;padding:14px 18px;">
+                <span style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:24px;color:var(--ke7d3a1);">{{ yb.year }}</span>
+              </div>
+              <sc-for list="{{ yb.quarters }}" as="q" hint-placeholder-count="4">
+                <div style="background:{{ q.color }};display:flex;align-items:center;justify-content:center;padding:14px 8px;gap:6px;">
+                  <span style="font-size:11.5px;font-weight:800;letter-spacing:.06em;color:var(--k0a0806);text-transform:uppercase;">{{ q.label }}</span>
+                  <sc-if value="{{ q.draft }}" hint-placeholder-val="{{ false }}">
+                    <span style="font-size:8.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:var(--k0a0806);color:var(--ke7d3a1);border-radius:10px;padding:2px 6px;">Draft</span>
+                  </sc-if>
+                </div>
+              </sc-for>
+            </div>
+            <sc-for list="{{ yb.rows }}" as="row" hint-placeholder-count="8">
+              <div style="display:grid;grid-template-columns:200px repeat(4,minmax(0,1fr));border-top:1px solid var(--k1a160e);" style-hover="background:var(--k0f0c08);">
+                <div style="padding:12px 18px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:{{ row.labelColor }};background:var(--k0b0a07);display:flex;align-items:center;">{{ row.label }}</div>
+                <sc-for list="{{ row.cells }}" as="c" hint-placeholder-count="4">
+                  <div style="padding:12px 8px;display:flex;flex-direction:column;gap:3px;align-items:center;justify-content:center;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:13px;font-variant-numeric:tabular-nums;font-weight:{{ c.weight }};color:{{ c.color }};"><span>{{ c.val }}</span><span style="font-family:'Manrope',sans-serif;font-size:10.5px;font-weight:600;color:var(--k8a8068);line-height:1.35;text-wrap:balance;">{{ c.sub }}</span></div>
+                </sc-for>
+              </div>
+            </sc-for>
+          </div>
+        </sc-for>
+      </div>
+      <div style="font-size:11px;color:var(--k6e6655);margin-top:14px;font-weight:500;line-height:1.6;">{{ rankNote }}</div>
+      <div style="font-size:11px;color:var(--k8a7f66);margin-top:7px;font-weight:500;line-height:1.6;">* Like-for-like basis — averages and growth cover only venues with comparable coverage in both that year and the one before it, with the prior year pro-rated to the same number of trading weeks. Each year block is measured against its own prior year, so starred cells are not directly comparable down a column; Total Profit and Total Turnover are always the full all-venue sums.</div>
+    </div>
+
+    <!-- ===== ROW: DAILY TABLE (8) + INSIGHTS (4) ===== -->
+    <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:16px;">
+
+      <!-- DAILY TRADING TABLE -->
+      <div style="grid-column:span 8;background:linear-gradient(168deg,var(--k100d09),var(--k0a0806));border:1px solid var(--k221c12);border-radius:16px;padding:24px 26px;">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:18px;flex-wrap:wrap;gap:8px;">
+          <div>
+            <div style="font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--k9a7d34);margin-bottom:8px;font-weight:700;">Daily Trading Analysis</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:26px;color:var(--kf3ecd9);line-height:1;">Average Daily Turnover</div>
+          </div>
+          <div style="display:flex;gap:16px;align-items:center;font-size:11px;color:var(--ka89878);font-weight:700;">
+            <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;border-radius:2px;background:var(--k54cf90);display:inline-block;"></span>{{ year }} (current)</span>
+            <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;border-radius:2px;background:var(--k86a9cf);display:inline-block;"></span>{{ prevYear }} (previous)</span>
+          </div>
+        </div>
+        <div style="overflow-x:auto;">
+        <sc-raw-table style="width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;">
+          <sc-raw-thead>
+            <sc-raw-tr>
+              <sc-raw-th style="text-align:left;font-family:'Manrope',sans-serif;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--k8a8068);font-weight:700;padding:0 0 12px;">Period</sc-raw-th>
+              <sc-for list="{{ dayHeaders }}" as="d" hint-placeholder-count="7">
+                <sc-raw-th style="text-align:right;font-family:'Manrope',sans-serif;font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:{{ d.color }};font-weight:700;padding:0 0 12px 10px;">{{ d.label }}</sc-raw-th>
+              </sc-for>
+              <sc-raw-th style="text-align:right;font-family:'Manrope',sans-serif;font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--kd9bd76);font-weight:800;padding:0 0 12px 14px;">Total</sc-raw-th>
+            </sc-raw-tr>
+          </sc-raw-thead>
+          <sc-raw-tbody>
+            <!-- current -->
+            <sc-raw-tr style="border-top:1px solid var(--k1c1810);">
+              <sc-raw-td style="padding:13px 0;"><span style="display:inline-flex;align-items:center;gap:7px;font-family:'Manrope',sans-serif;font-size:12.5px;font-weight:700;color:var(--kdfe9d8);"><span style="width:9px;height:24px;border-radius:3px;background:var(--k54cf90);display:inline-block;"></span>{{ curRowLabel }}</span></sc-raw-td>
+              <sc-for list="{{ curCells }}" as="c" hint-placeholder-count="7">
+                <sc-raw-td style="text-align:right;font-size:12.5px;color:{{ c.color }};padding:13px 0 13px 10px;background:{{ c.bg }};font-weight:{{ c.weight }};">{{ c.val }}</sc-raw-td>
+              </sc-for>
+              <sc-raw-td style="text-align:right;font-size:13px;color:var(--kf3ecd9);font-weight:800;padding:13px 0 13px 14px;">{{ curTotal }}</sc-raw-td>
+            </sc-raw-tr>
+            <!-- previous -->
+            <sc-raw-tr style="border-top:1px solid var(--k1c1810);">
+              <sc-raw-td style="padding:13px 0;"><span style="display:inline-flex;align-items:center;gap:7px;font-family:'Manrope',sans-serif;font-size:12.5px;font-weight:700;color:var(--kcdd9e6);"><span style="width:9px;height:24px;border-radius:3px;background:var(--k86a9cf);display:inline-block;"></span>{{ prevRowLabel }}</span></sc-raw-td>
+              <sc-for list="{{ prevCells }}" as="c" hint-placeholder-count="7">
+                <sc-raw-td style="text-align:right;font-size:12.5px;color:var(--k9aa7b5);padding:13px 0 13px 10px;font-weight:600;">{{ c.val }}</sc-raw-td>
+              </sc-for>
+              <sc-raw-td style="text-align:right;font-size:13px;color:var(--kcdd9e6);font-weight:800;padding:13px 0 13px 14px;">{{ prevTotal }}</sc-raw-td>
+            </sc-raw-tr>
+            <!-- diff -->
+            <sc-raw-tr style="border-top:1px solid var(--k2a2316);">
+              <sc-raw-td style="padding:13px 0;"><span style="font-family:'Manrope',sans-serif;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ka89878);font-weight:700;">Daily +/−</span></sc-raw-td>
+              <sc-for list="{{ diffCells }}" as="c" hint-placeholder-count="7">
+                <sc-raw-td style="text-align:right;font-size:12px;color:{{ c.color }};padding:13px 0 13px 10px;font-weight:700;">{{ c.val }}</sc-raw-td>
+              </sc-for>
+              <sc-raw-td style="text-align:right;font-size:12.5px;color:{{ totalDiffColor }};font-weight:800;padding:13px 0 13px 14px;">{{ totalDiff }}</sc-raw-td>
+            </sc-raw-tr>
+          </sc-raw-tbody>
+        </sc-raw-table>
+        </div>
+        <div style="display:flex;gap:24px;margin-top:18px;border-top:1px solid var(--k1a160e);padding-top:16px;">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <span style="font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--k9a7d34);font-weight:700;">Strongest</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:20px;color:var(--ke7d3a1);">{{ bestDayName }}</span>
+            <span style="font-size:11px;color:var(--ka89878);font-family:'IBM Plex Mono',monospace;font-weight:700;">{{ bestDayVal }}</span>
+          </div>
+          <div style="width:1px;background:var(--k1c1810);"></div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <span style="font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--k8a8068);font-weight:700;">Weakest</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:20px;color:var(--k9a9078);">{{ worstDayName }}</span>
+            <span style="font-size:11px;color:var(--ka89878);font-family:'IBM Plex Mono',monospace;font-weight:700;">{{ worstDayVal }}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- INSIGHTS -->
+      <div style="grid-column:span 4;background:linear-gradient(168deg,var(--k15110a),var(--k0c0a07));border:1px solid var(--k2a2316);border-radius:16px;padding:24px 22px 18px;display:flex;flex-direction:column;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px;">
+          <span style="font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--kd9bd76);font-weight:700;">Automated Insights</span>
+          <span style="flex:1;height:1px;background:linear-gradient(90deg,var(--k3a3018),transparent);"></span>
+        </div>
+        <div class="ewc-scroll" style="display:flex;flex-direction:column;gap:15px;overflow:auto;">
+          <sc-for list="{{ insights }}" as="ins" hint-placeholder-count="5">
+            <div style="border-left:2px solid var(--k4a3c1e);padding-left:14px;">
+              <div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--k9a7d34);margin-bottom:6px;font-weight:700;">{{ ins.tag }}</div>
+              <div style="font-size:13.5px;line-height:1.6;color:var(--kd4ccb8);font-weight:500;">{{ ins.text }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:24px;font-size:11px;color:var(--k6e6655);line-height:1.7;border-top:1px solid var(--k1a160e);padding-top:16px;font-weight:500;">{{ footerNote }}</div>
+  </main>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:1400,&quot;height&quot;:1400}}">
+class Component extends DCLogic {
+  state = { light:false, venueSel:[], qFrom:(((window.EWC_DATA||{}).defaultYear||2026)-1), qTo:((window.EWC_DATA||{}).defaultYear||2026), year:((window.EWC_DATA||{}).defaultYear||2026), quarter:((window.EWC_DATA||{}).defaultQuarter||3), ready:false, hoverDoy:null, hoverChartW:null, showWeeks:false, rangeOpen:false, yearRanges:{}, hiddenYears:{} };
+
+  componentDidMount(){
+    try{ if(localStorage.getItem('ewc-theme')==='light'){ document.documentElement.classList.add('ewc-light'); this.setState({light:true}); } }catch(e){}
+    const chk=()=>{ if(window.EWC_DATA){ this.setState({ready:true}); return true; } return false; };
+    if(!chk()) this._t=setInterval(()=>{ if(chk()) clearInterval(this._t); },60);
+  }
+  componentWillUnmount(){ if(this._t) clearInterval(this._t); }
+
+  /* formatting */
+  fFull(n){ if(n==null||isNaN(n)) return '—'; return '$'+Math.round(n).toLocaleString('en-AU'); }
+  fFull2(n){ if(n==null||isNaN(n)) return '—'; return '$'+n.toLocaleString('en-AU',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+  fM(n){ if(n==null||isNaN(n)) return '—'; const m=n/1e6; return '$'+m.toFixed(Math.abs(m)>=10?1:2)+'M'; }
+  fSign(n){ return (n>0?'+':'')+n.toFixed(1)+'%'; }
+  fSign2(n){ return (n>0?'+':'')+n.toFixed(2)+'%'; }
+  fSignFull(n){ return (n>=0?'+':'−')+'$'+Math.abs(Math.round(n)).toLocaleString('en-AU'); }
+
+  selVenues(h){ const s=this.state.venueSel||[]; return (!s.length||s.length===h.venues.length) ? h.venues : h.venues.filter((v,i)=>s.includes(i)); }
+  toggleVenue(i, n){ this.setState(st=>{ let s=(st.venueSel||[]).slice(); s=s.includes(i)?s.filter(x=>x!==i):s.concat(i); if(s.length===n) s=[]; return {venueSel:s}; }); }
+
+  /* period aggregation: quarter or full year */
+  period(venues, year, quarter){
+    const daily=[0,0,0,0,0,0,0]; let to=0,pr=0,weeks=0; let series=null;
+    const partAcc={}, partOrder=[]; const byVenue=[];
+    venues.forEach(v=>{
+      const dy=v.data[year]; if(!dy) return;
+      const qq=quarter==='all'?null:dy.quarters[quarter-1];
+      const Z=[0,0,0,0,0,0,0];
+      byVenue.push(quarter==='all'
+        ? {name:v.name, to:dy.totalTO, pr:dy.totalPR, weeks:dy.weeks, daily:dy.daily||Z, dailyPR:Z}
+        : {name:v.name, to:qq?qq.to:0, pr:qq?qq.pr:0, weeks:qq?qq.weeks:0, daily:qq?(qq.daily||Z):Z, dailyPR:qq?(qq.dailyPR||Z):Z});
+      if(quarter==='all'){
+        to+=dy.totalTO; pr+=dy.totalPR; weeks=Math.max(weeks,dy.weeks);
+        dy.daily.forEach((d,i)=>daily[i]+=d);
+        const s=dy.series;
+        if(!series) series=s.map(p=>({date:p.date, to:p.to, pr:p.pr})); else s.forEach((p,i)=>{ if(series[i]) { series[i].to+=p.to; series[i].pr+=p.pr; } });
+        dy.quarters.forEach(q=>{ const k='Q'+q.q; if(!(k in partAcc)){partAcc[k]={key:k,to:0,pr:0};partOrder.push(k);} partAcc[k].to+=q.to; partAcc[k].pr+=q.pr; });
+      } else {
+        const q=dy.quarters[quarter-1]; if(!q) return;
+        to+=q.to; pr+=q.pr; weeks=Math.max(weeks,q.weeks);
+        q.daily.forEach((d,i)=>daily[i]+=d);
+        const s=dy.series.filter(p=>p.q===quarter);
+        if(!series) series=s.map(p=>({date:p.date, to:p.to, pr:p.pr})); else s.forEach((p,i)=>{ if(series[i]) { series[i].to+=p.to; series[i].pr+=p.pr; } });
+        q.months.forEach(mo=>{ const k=mo.key; if(!(k in partAcc)){partAcc[k]={key:k,to:0,pr:0};partOrder.push(k);} partAcc[k].to+=mo.to; partAcc[k].pr+=mo.pr; });
+      }
+    });
+    return { to, pr, weeks, rtv: to?(pr/to*100):0, daily, series:series||[], parts:partOrder.map(k=>partAcc[k]), byVenue };
+  }
+
+  /* Like-for-like basis: group averages are the SUM of per-venue average weeks,
+     restricted to venues with comparable coverage in BOTH periods. Prevents a venue
+     whose data stops mid-period from punching an artificial hole in the group. */
+  lfl(venues, year, prevYear, quarter){
+    const c=this.period(venues,year,quarter), p=this.period(venues,prevYear,quarter);
+    const pairs=[], gaps=[];
+    /* coverage measured against the best-covered venue in the SAME period, so an
+       in-progress quarter isn't judged against last year's full 13 weeks */
+    const maxC=Math.max(0,...c.byVenue.map(x=>x.weeks)), maxP=Math.max(0,...p.byVenue.map(x=>x.weeks));
+    venues.forEach(v=>{
+      const cv=c.byVenue.find(x=>x.name===v.name), pv=p.byVenue.find(x=>x.name===v.name);
+      const cw=cv?cv.weeks:0, pw=pv?pv.weeks:0;
+      if(cw>0 && pw>0 && cw>=0.5*maxC && pw>=0.5*maxP) pairs.push({cv,pv});
+      else if(cw>0 || pw>0) gaps.push({name:v.name, cw, pw});
+    });
+    const sum=(f,k)=>pairs.reduce((a,x)=>a+(x[f]&&x[f].weeks?x[f][k]/x[f].weeks:0),0);
+    const tot=(f,k)=>pairs.reduce((a,x)=>a+(x[f]?x[f][k]:0),0);
+    const dly=(f,k)=>[0,1,2,3,4,5,6].map(i=>pairs.reduce((a,x)=>a+((x[f]&&x[f][k])?x[f][k][i]:0),0));
+    /* prior period pro-rated to the CURRENT period's week count, per venue, so a
+       part-quarter never reads as a decline against a full one */
+    const pro=k=>pairs.reduce((a,x)=>a+(x.pv.weeks? (x.pv[k]/x.pv.weeks)*x.cv.weeks : 0),0);
+    const ok=pairs.length>0;
+    return {
+      cur:c, prev:p, gaps, comparable:pairs.length, lfl: ok && gaps.length>0,
+      names: pairs.map(x=>x.cv.name),
+      curAvgTO: ok? sum('cv','to') : (c.weeks?c.to/c.weeks:0),
+      prevAvgTO: ok? sum('pv','to') : (p.weeks?p.to/p.weeks:0),
+      curAvgPR: ok? sum('cv','pr') : (c.weeks?c.pr/c.weeks:0),
+      prevAvgPR: ok? sum('pv','pr') : (p.weeks?p.pr/p.weeks:0),
+      curTO: ok? tot('cv','to') : c.to,  prevTO: ok? pro('to') : p.to,
+      curPR: ok? tot('cv','pr') : c.pr,  prevPR: ok? pro('pr') : p.pr,
+      prorated: ok && pairs.some(x=>x.cv.weeks!==x.pv.weeks),
+      curDaily: ok? dly('cv','daily') : c.daily,
+      prevDaily: ok? dly('pv','daily') : p.daily,
+    };
+  }
+
+  mkPath(vals,W,H,pad){
+    if(!vals||!vals.length) return {line:'',area:''};
+    let v=vals.slice(); if(v.length===1) v=[v[0],v[0]];
+    const mn=Math.min(...v), mx=Math.max(...v), rng=(mx-mn)||1;
+    const px=i=> (i/(v.length-1)*W);
+    const py=val=> pad+(1-(val-mn)/rng)*(H-2*pad);
+    let line=''; v.forEach((val,i)=>{ line+=(i?'L':'M')+px(i).toFixed(1)+' '+py(val).toFixed(1)+' '; });
+    const area='M0 '+H+' '+v.map((val,i)=>'L'+px(i).toFixed(1)+' '+py(val).toFixed(1)).join(' ')+' L'+W+' '+H+' Z';
+    return { line:line.trim(), area };
+  }
+
+  pie(parts, key){
+    const colors=['var(--ka9c4e0)','#1faa54','#f5c518','#c98bbf'];
+    const cx=60, cy=60, r=54;
+    const total=parts.reduce((a,p)=>a+(p[key]||0),0)||1;
+    let ang=-Math.PI/2;
+    return parts.map((p,i)=>{
+      const frac=(p[key]||0)/total;
+      const a0=ang, a1=ang+frac*2*Math.PI; ang=a1;
+      const x0=(cx+r*Math.cos(a0)).toFixed(2), y0=(cy+r*Math.sin(a0)).toFixed(2);
+      const x1=(cx+r*Math.cos(a1)).toFixed(2), y1=(cy+r*Math.sin(a1)).toFixed(2);
+      const large=frac>0.5?1:0;
+      const d = frac>=0.999
+        ? 'M '+cx+' '+(cy-r)+' A '+r+' '+r+' 0 1 1 '+(cx-0.01).toFixed(2)+' '+(cy-r)+' Z'
+        : 'M '+cx+' '+cy+' L '+x0+' '+y0+' A '+r+' '+r+' 0 '+large+' 1 '+x1+' '+y1+' Z';
+      return { color:colors[i%colors.length], d, key:p.key, val:this.fFull(p[key]), pct:Math.round(frac*100)+'%' };
+    });
+  }
+
+  chip(active){ return active ? {bg:'var(--kc2a14e)',fg:'var(--k0a0806)',bd:'var(--kc2a14e)'} : {bg:'var(--k15120c)',fg:'var(--kc2bba8)',bd:'var(--k2c2619)'}; }
+
+  renderVals(){
+    const D = window.EWC_DATA;
+    if(!D) return { loading:true, ready:false };
+    const st = this.state;
+    const h = D.hotels[0];
+    const venues = this.selVenues(h);
+    const Q=st.quarter, Y=st.year, PY=Y-1;
+    const cur = this.period(venues, Y, Q);
+    const prev = this.period(venues, PY, Q);
+
+    const GREEN='var(--k54cf90)', BLUE='var(--k86a9cf)', neg='var(--ke08a6a)';
+    const periodTag = Q==='all' ? ('FY '+Y) : ('Q'+Q);
+
+    /* ----- KPI comparison cards ----- */
+    const B = this.lfl(venues, Y, PY, Q);
+    const curAvgTO=B.curAvgTO, prevAvgTO=B.prevAvgTO;
+    const curAvgPR=B.curAvgPR, prevAvgPR=B.prevAvgPR;
+    const fmtCov=g=>g.name+' ('+(g.cw?(g.cw+' of '+g.pw+' wks'):'no data')+')';
+    const coverageNote = (B.lfl || B.prorated)
+      ? ('Growth shown like-for-like'
+         + (B.lfl ? (' on '+B.comparable+' of '+venues.length+' venues — excluded: '+B.gaps.map(fmtCov).join(', ')) : '')
+         + (B.prorated ? ((B.lfl?'. ':' — ')+PY+' pro-rated to the same number of trading weeks') : ''))
+      : '';
+    const hasPrev = prev.weeks>0;
+    const toGrowth = prevAvgTO ? ((curAvgTO-prevAvgTO)/prevAvgTO*100) : 0;
+    const prGrowth = prevAvgPR ? ((curAvgPR-prevAvgPR)/prevAvgPR*100) : 0;
+    const weeksToggleLabel = st.showWeeks?'Hide weeks':'View weeks';
+    const weeksToggle = ()=>this.setState({showWeeks:!this.state.showWeeks});
+    const kpiCards=[
+      { label:'Avg Weekly Turnover', value:hasPrev?this.fFull(prevAvgTO):'—', period:periodTag+' · '+PY, valueColor:'var(--kcdd9e6)', bar:'linear-gradient(90deg,transparent,var(--k86a9cf),transparent)', border:'rgba(111,147,184,.30)', tagColor:'var(--k86a9cf)', tagBorder:'rgba(111,147,184,.35)', delta:hasPrev?'Previous year':('No '+PY+' data supplied'), dColor:'var(--k8a8068)', note:'', showToggle:false },
+      { label:'Avg Weekly Profit', value:hasPrev?this.fFull(prevAvgPR):'—', period:periodTag+' · '+PY, valueColor:'var(--kcdd9e6)', bar:'linear-gradient(90deg,transparent,var(--k86a9cf),transparent)', border:'rgba(111,147,184,.30)', tagColor:'var(--k86a9cf)', tagBorder:'rgba(111,147,184,.35)', delta:hasPrev?'Previous year':('No '+PY+' data supplied'), dColor:'var(--k8a8068)', note:'', showToggle:true, toggleLabel:weeksToggleLabel, onToggle:weeksToggle },
+      { label:'Avg Weekly Turnover', value:this.fFull(curAvgTO), period:periodTag+' · '+Y, valueColor:'var(--kdfe9d8)', bar:'linear-gradient(90deg,transparent,var(--k54cf90),transparent)', border:'rgba(61,186,120,.34)', tagColor:'var(--k54cf90)', tagBorder:'rgba(61,186,120,.40)', delta:hasPrev?((toGrowth>=0?'▲ ':'▼ ')+this.fSign(toGrowth)):'—', dColor: !hasPrev?'var(--k8a8068)':(toGrowth>=0?GREEN:neg), note:hasPrev?('vs '+PY):'no prior-year comparison', showToggle:false },
+      { label:'Avg Weekly Profit', value:this.fFull(curAvgPR), period:periodTag+' · '+Y, valueColor:'var(--kdfe9d8)', bar:'linear-gradient(90deg,transparent,var(--k54cf90),transparent)', border:'rgba(61,186,120,.34)', tagColor:'var(--k54cf90)', tagBorder:'rgba(61,186,120,.40)', delta:hasPrev?((prGrowth>=0?'▲ ':'▼ ')+this.fSign(prGrowth)):'—', dColor: !hasPrev?'var(--k8a8068)':(prGrowth>=0?GREEN:neg), note:hasPrev?('vs '+PY):'no prior-year comparison', showToggle:true, toggleLabel:weeksToggleLabel, onToggle:weeksToggle },
+    ];
+
+    /* ----- week-by-week profit comparison table ----- */
+    const shortDate=(ds)=>{ if(!ds) return ''; const d=new Date(Date.parse(ds+'T00:00:00Z')+6*864e5); const mn=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return mn[d.getUTCMonth()]+' '+d.getUTCDate(); };
+    const wkCount=Math.max(cur.series.length, prev.series.length);
+    const weeksRows=[];
+    for(let i=0;i<wkCount;i++){
+      const cw=cur.series[i], pw=prev.series[i];
+      const cv=cw?cw.pr:null, pv=pw?pw.pr:null;
+      const diff = (cv!=null && pv!=null) ? cv-pv : null;
+      weeksRows.push({
+        label:'Wk '+(i+1)+(cw&&cw.date?' · w/e '+shortDate(cw.date):''),
+        curVal: cv!=null? this.fFull(cv):'—',
+        prevVal: pv!=null? this.fFull(pv):'—',
+        diff: diff!=null? this.fSignFull(diff):'—',
+        diffColor: diff==null?'var(--k8a8068)':(diff>=0?GREEN:neg),
+      });
+    }
+
+    /* ----- multi-year overlaid line chart (full year, all years) ----- */
+    const yearColors={2020:'#9aa4b3',2021:'#e07b39',2022:'#c44fc4',2023:'#f2d019',2024:'#3a9fe0',2025:'#e8413c',2026:'#3fae5f',2027:'#4fc3c3',2028:'#d98fd9'};
+    const myYears = D.years.filter(y=>venues.some(v=>v.data[y]));
+    const MW=1000, MH=300;
+    const doy=d=>{ const dt=new Date(d+'T00:00:00Z'); const start=Date.UTC(dt.getUTCFullYear(),0,1); return Math.floor((dt-start)/86400000); };
+    const yearRanges = st.yearRanges||{};
+    const rangeOf=(y)=> yearRanges[y] || {from:0, to:11};
+    const lineData={}; let rawMax=0;
+    myYears.forEach(y=>{
+      const byDate={};
+      venues.forEach(v=>{ const dy=v.data[y]; if(!dy) return; dy.series.forEach(p=>{ byDate[p.date]=(byDate[p.date]||0)+p.to; }); });
+      const r=rangeOf(y);
+      const we=d=>new Date(Date.parse(d+'T00:00:00Z')+6*864e5).toISOString().slice(0,10);
+      const pts=Object.keys(byDate).sort().filter(d=>{ const m=new Date(we(d)+'T00:00:00Z').getUTCMonth(); return m>=r.from && m<=r.to; }).map(d=>({x:doy(we(d)),to:byDate[d]}));
+      lineData[y]=pts; pts.forEach(p=>{ if(p.to>rawMax) rawMax=p.to; });
+    });
+    const niceStep=(raw)=>{ const exp=Math.floor(Math.log10(raw)); const f=raw/Math.pow(10,exp); const nf=f<=1?1:f<=2?2:f<=2.5?2.5:f<=5?5:10; return nf*Math.pow(10,exp); };
+    const step=niceStep((rawMax||1)/7);
+    const yMax=Math.max(step, Math.ceil((rawMax||1)/step)*step);
+    const mpx=x=>(x/366*MW);
+    const mpy=v=>MH-(v/yMax*MH);
+    const hiddenYears = st.hiddenYears || {};
+    const toggleYearVisible=(y)=>{ const nh={...hiddenYears}; if(nh[y]) delete nh[y]; else nh[y]=true; this.setState({hiddenYears:nh}); };
+    const multiYearLines=myYears.filter(y=>!hiddenYears[y]).map(y=>{
+      const pts=lineData[y]; let path='';
+      pts.forEach((p,i)=>{ path+=(i?'L':'M')+mpx(p.x).toFixed(1)+' '+mpy(p.to).toFixed(1)+' '; });
+      const single=pts.length===1; if(single) path+='L'+(mpx(pts[0].x)+0.01).toFixed(2)+' '+mpy(pts[0].to).toFixed(1);
+      return { year:y, color:yearColors[y], path:path.trim(), width: single?'12':(y===Y?'3':'2'), op: y===Y?'1':'0.85' };
+    });
+    const fmtAxis=v=>{ if(v===0) return '0'; if(v>=1e6) return '$'+(v/1e6).toFixed(v/1e6>=10?0:1)+'M'; return '$'+Math.round(v/1e3)+'k'; };
+    const mTicks=[]; for(let v=yMax; v>=0; v-=step) mTicks.push(v);
+    const yGrid=mTicks.map(v=>({ y:mpy(v).toFixed(1) }));
+    const yAxisLabels=mTicks.map(fmtAxis);
+    const monthTicks=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    const yearLegend=myYears.map(y=>({year:y,color:yearColors[y], hidden:!!hiddenYears[y], opacity: hiddenYears[y]?'0.35':'1', onClick:()=>toggleYearVisible(y)}));
+    const rangeBtnBg = st.rangeOpen ? 'var(--k1c1710)' : 'transparent';
+
+    /* ----- per-year range popover ----- */
+    const monthOpts=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    const toggleRange=()=>this.setState({rangeOpen:!this.state.rangeOpen});
+    const setYearFrom=(y,mIdx)=>{ const cur=rangeOf(y); const nr={...yearRanges, [y]:{from:mIdx, to:Math.max(mIdx,cur.to)}}; this.setState({yearRanges:nr}); };
+    const setYearTo=(y,mIdx)=>{ const cur=rangeOf(y); const nr={...yearRanges, [y]:{from:Math.min(cur.from,mIdx), to:mIdx}}; this.setState({yearRanges:nr}); };
+    const resetRanges=()=>this.setState({yearRanges:{}});
+    const rangeRows = myYears.slice().sort((a,b)=>b-a).map(y=>{
+      const r=rangeOf(y);
+      return {
+        year:y, color:yearColors[y],
+        fromVal:r.from, toVal:r.to,
+        onFromChange:(e)=>setYearFrom(y,parseInt(e.target.value,10)),
+        onToChange:(e)=>setYearTo(y,parseInt(e.target.value,10)),
+        fromOpts: monthOpts.map((m,i)=>({label:m, val:i})),
+        toOpts: monthOpts.map((m,i)=>({label:m, val:i})),
+      };
+    });
+
+    /* ----- multi-year chart hover interactivity ----- */
+    const onChartMove=(e)=>{
+      const rect=e.currentTarget.getBoundingClientRect(); if(!rect.width) return;
+      const fx=(e.clientX-rect.left)/rect.width;
+      const dv=Math.round(Math.max(0,Math.min(1,fx))*365);
+      if(this.state.hoverDoy!==dv || this.state.hoverChartW!==rect.width) this.setState({hoverDoy:dv, hoverChartW:rect.width});
+    };
+    const onChartLeave=()=>{ if(this.state.hoverDoy!=null) this.setState({hoverDoy:null}); };
+    let hoverVisible=false, hoverGuideX='0', hoverDots=[], hoverTooltipRows=[];
+    let tooltipLeftPx='0px', tooltipTopPx='0px', tooltipHeaderLabel='';
+    if(st.hoverDoy!=null){
+      const hd=st.hoverDoy;
+      hoverDots = myYears.filter(y=>!hiddenYears[y]).map(y=>{
+        const pts=lineData[y]; if(!pts||!pts.length) return null;
+        let best=pts[0], bd=Math.abs(pts[0].x-hd);
+        pts.forEach(p=>{ const d=Math.abs(p.x-hd); if(d<bd){bd=d;best=p;} });
+        return { year:y, color:yearColors[y], x:best.x, to:best.to, cx:mpx(best.x).toFixed(1), cy:mpy(best.to).toFixed(1) };
+      }).filter(Boolean);
+      if(hoverDots.length){
+        hoverVisible=true;
+        hoverGuideX=mpx(hd).toFixed(1);
+        const chartW = st.hoverChartW || 900;
+        const rawLeft = (parseFloat(hoverGuideX)/MW)*chartW;
+        const halfTooltip = 74;
+        const leftPx = Math.max(halfTooltip+4, Math.min(chartW-halfTooltip-4, rawLeft));
+        tooltipLeftPx = leftPx.toFixed(0)+'px';
+        const minCy=Math.min(...hoverDots.map(d=>parseFloat(d.cy)));
+        const maxCy=Math.max(...hoverDots.map(d=>parseFloat(d.cy)));
+        const estH = 40 + hoverDots.length*20;
+        let topPx = minCy - estH - 12;
+        if(topPx < 4) topPx = maxCy + 14;
+        tooltipTopPx = topPx.toFixed(0)+'px';
+        const monthNames=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        const md=new Date(Date.UTC(Y,0,1)+hd*86400000);
+        tooltipHeaderLabel=monthNames[md.getUTCMonth()]+' '+md.getUTCDate();
+        hoverTooltipRows = hoverDots.slice().sort((a,b)=>b.year-a.year).map(d=>({ year:d.year, color:d.color, val:this.fFull(d.to) }));
+      }
+    }
+
+    /* ----- net & turnover comparison ----- */
+    const cTO=B.curTO, pTO=B.prevTO, cPR=B.curPR, pPR=B.prevPR;
+    const toMax=Math.max(cTO,pTO,1), prMax=Math.max(cPR,pPR,1);
+    /* deltas are the same week-normalised figures as the KPI cards, so one growth
+       number per metric appears on screen */
+    const toDelta = toGrowth, prDelta = prGrowth;
+    const lflMark = (B.lfl||B.prorated)?' *':'';
+    const compareGroups=[
+      { label:'Turnover'+lflMark, curVal:this.fFull(cTO), prevVal:hasPrev?this.fFull(pTO):'—', curW:(cTO/toMax*100).toFixed(1)+'%', prevW:(pTO/toMax*100).toFixed(1)+'%', delta:hasPrev?this.fSign(toDelta):'—', dColor: !hasPrev?'var(--k8a8068)':(toDelta>=0?GREEN:neg) },
+      { label:'Net Profit'+lflMark, curVal:this.fFull(cPR), prevVal:hasPrev?this.fFull(pPR):'—', curW:(cPR/prMax*100).toFixed(1)+'%', prevW:(pPR/prMax*100).toFixed(1)+'%', delta:hasPrev?this.fSign(prDelta):'—', dColor: !hasPrev?'var(--k8a8068)':(prDelta>=0?GREEN:neg) },
+    ];
+
+    /* ----- pies ----- */
+    const partKind = Q==='all' ? 'Quarterly' : 'Monthly';
+    const partKindSingular = Q==='all' ? 'Quarter' : 'Month';
+    const liveParts=cur.parts.filter(x=>x.weeks>0||x.to);
+    const pieTO=this.pie(liveParts,'to');
+    const piePR=this.pie(liveParts,'pr');
+
+    /* ----- weekly trend ----- */
+    const toVals=cur.series.map(p=>p.to);
+    const toP=this.mkPath(toVals,1000,260,28);
+    const trendMax = toVals.length ? this.fM(Math.max(...toVals)) : '—';
+    const trendTicks = Q==='all' ? ['Q1','Q2','Q3','Q4'] : ['Wk 1','','','Wk '+(toVals.length||0)];
+
+    /* ----- daily table ----- */
+    const dnames=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+    const dshort=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+    const cd=B.curDaily, pd=B.prevDaily;
+    const posIdx=cd.map((v,i)=>({v,i})).filter(o=>o.v>0);
+    let bi=0,wi=0;
+    if(posIdx.length){ bi=posIdx.reduce((a,b)=>b.v>a.v?b:a).i; wi=posIdx.reduce((a,b)=>b.v<a.v?b:a).i; }
+    const dayHeaders=dshort.map((d,i)=>({label:d, color: i===bi?'var(--kd9bd76)':(i===wi?'var(--k8a8068)':'var(--k8a8068)')}));
+    const curCells=cd.map((v,i)=>({ val:v?this.fFull(v):'—', color: i===bi?'var(--ke7d3a1)':(i===wi?'var(--k9a9078)':'var(--kdfe9d8)'),
+      bg: i===bi?'rgba(217,189,118,.10)':(i===wi?'rgba(138,128,104,.06)':'transparent'),
+      weight: (i===bi||i===wi)?'800':'600' }));
+    const prevCells=pd.map(v=>({val:hasPrev&&v?this.fFull(v):'—'}));
+    const diffCells=cd.map((v,i)=>{ const df=v-pd[i]; return (hasPrev&&v&&pd[i])?{val:this.fSignFull(df), color: df>=0?GREEN:neg}:{val:'—', color:'var(--k8a8068)'}; });
+    const curTotal=this.fFull(cd.reduce((a,b)=>a+b,0));
+    const prevTotal=this.fFull(pd.reduce((a,b)=>a+b,0));
+    const totDiff=cd.reduce((a,b)=>a+b,0)-pd.reduce((a,b)=>a+b,0);
+
+    /* ----- insights ----- */
+    const insights=[];
+    if(posIdx.length){
+      const upPct=((cd[bi]/cd[wi]-1)*100).toFixed(0);
+      insights.push({ tag:'Trading Pattern', text: dnames[bi]+' is the strongest trading day at '+this.fFull(cd[bi])+' average — '+upPct+'% above the '+dnames[wi]+' floor of '+this.fFull(cd[wi])+'.' });
+    }
+    if(hasPrev) insights.push({ tag:'Year on Year', text:'Average weekly turnover '+(toGrowth>=0?'rose':'eased')+' '+this.fSign(toGrowth)+' against '+PY+', with weekly profit moving '+this.fSign(prGrowth)+'.' });
+    if(cur.parts.length){
+      const top=cur.parts.reduce((a,b)=>b.to>a.to?b:a);
+      const share=(top.to/cur.to*100).toFixed(0);
+      insights.push({ tag:'Best '+(Q==='all'?'Quarter':'Month'), text:top.key+' is the strongest '+(Q==='all'?'quarter':'month')+' this period at '+this.fFull(top.to)+' — '+share+'% of the total.' });
+    }
+    insights.push({ tag:'Yield', text:'Return-to-venue held at '+cur.rtv.toFixed(1)+'% for '+(Q==='all'?('FY '+Y):('Q'+Q+' '+Y))+(hasPrev?(', '+(cur.rtv>=prev.rtv?'up':'down')+' '+Math.abs(cur.rtv-prev.rtv).toFixed(1)+' pts on '+PY):'')+'.' });
+    if(venues.length>1){
+      const ranked=venues.map(v=>({name:v.name,to:this.period([v],Y,Q).to})).sort((a,b)=>b.to-a.to);
+      const top=ranked[0]; const share=(top.to/cur.to*100).toFixed(0);
+      insights.push({ tag:'Within Group', text:top.name+' leads the group at '+this.fFull(top.to)+' turnover — '+share+'% of combined volume.' });
+    }
+
+    /* ----- filter options ----- */
+    const yearOpts=myYears.map(y=>{ const c=this.chip(Y===y); return {label:String(y), onClick:()=>this.setState({year:y}), bg:c.bg, fg:c.fg, bd:c.bd}; });
+    const quarterOpts=[[1,'Q1'],[2,'Q2'],[3,'Q3'],[4,'Q4'],['all','Full Year']].map(([k,l])=>{ const c=this.chip(Q===k); return {label:l, onClick:()=>this.setState({quarter:k}), bg:c.bg, fg:c.fg, bd:c.bd}; });
+    const selIdx=st.venueSel||[]; const allOn=!selIdx.length;
+    const venueOpts = [{label:'All Venues',k:'all'}].concat(h.venues.map((v,i)=>({label:v.name,k:i}))).map(o=>{ const on=o.k==='all'?allOn:(!allOn&&selIdx.includes(o.k)); const c=this.chip(on); return {label:(o.k!=='all'&&on?'✓ ':'')+o.label, onClick:()=>o.k==='all'?this.setState({venueSel:[]}):this.toggleVenue(o.k,h.venues.length), bg:c.bg, fg:c.fg, bd:c.bd}; });
+
+    /* ----- quarterly performance summary table (2023-2026) ----- */
+    const qColors=['#3ecfe6','#ff9a4d','#c39be8','#4ade80'];
+    const qLabels=['Jan,Feb,March','April,May,June','July,Aug,Sept','Oct,Nov,Dec'];
+    const qAvail=myYears.slice(-4);
+    const qF=Math.min(st.qFrom,st.qTo), qT=Math.max(st.qFrom,st.qTo);
+    const qRangeOpts=(which)=>qAvail.map(y=>{ const on=(which==='from'?st.qFrom:st.qTo)===y; const inR=y>=qF&&y<=qT; return {label:String(y), onClick:()=>this.setState(which==='from'?{qFrom:y}:{qTo:y}), bg:on?'var(--kd9bd76)':(inR?'var(--k1c170e)':'transparent'), fg:on?'var(--k0a0806)':(inR?'var(--ke7d3a1)':'var(--k8a8068)'), bd:on?'var(--kd9bd76)':'var(--k2a2316)'}; });
+    const qFromOpts=qRangeOpts('from'), qToOpts=qRangeOpts('to');
+    const qRangeLabel = qF===qT ? String(qF) : (qF+'–'+qT);
+    const summaryYears=qAvail.filter(y=>y>=qF&&y<=qT).slice().reverse().map(y=>{
+      const quarters=[1,2,3,4].map(qi=>{
+        const p=this.period(venues,y,qi);
+        const weeks=p.weeks;
+        return { label:qLabels[qi-1], color:qColors[qi-1], draft: (y===D.latestYear && weeks>0 && weeks<13), weeks, to:p.to, pr:p.pr, rtv:p.rtv };
+      });
+      const qBasis=[1,2,3,4].map(qi=>this.lfl(venues,y,y-1,qi));
+      const cell=(v,fmt,color,weight)=>({sub:'',val:v==null?'—':fmt(v), color:color||'var(--kdfe9d8)', weight:weight||'600'});
+      const rows=[
+        { label:'Average Profit', labelColor:'var(--ka89878)', cells: quarters.map((q,i)=>{ const b=qBasis[i]; if(!q.weeks) return cell(null,v=>v,'var(--kdfe9d8)','700'); return {val:this.fFull2(b.curAvgPR)+(b.lfl?' *':''), color:'var(--kdfe9d8)', weight:'700'}; }) },
+        { label:'Average Turnover', labelColor:'var(--ka89878)', cells: quarters.map((q,i)=>{ const b=qBasis[i]; if(!q.weeks) return cell(null,v=>v,'var(--kdfe9d8)','700'); return {val:this.fFull2(b.curAvgTO)+(b.lfl?' *':''), color:'var(--kdfe9d8)', weight:'700'}; }) },
+        { label:'Ranking Position', labelColor:'var(--ka89878)', cells: [1,2,3,4].map(qi=>{
+            const RK=window.EWC_RANKS||{}; const MN=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            const mons=[0,1,2].map(j=>(qi-1)*3+j+1);
+            const per=venues.map(v=>{ const r=RK[v.name]; if(!r) return null; const qr=r.q[y+'-'+qi]; const ms=mons.map(m=>({m:MN[m-1],r:r.m[y+'-'+m]})).filter(x=>x.r!=null); return {name:v.name.split(' ')[0], qr, ms}; }).filter(x=>x&&(x.qr!=null||x.ms.length));
+            if(!per.length) return {val:'—', sub:'', color:'var(--k6e6655)', weight:'600'};
+            if(per.length===1){ const x=per[0];
+              if(x.qr!=null) return {val:'#'+x.qr, sub:x.ms.map(m=>m.m+' '+m.r).join(' · '), color:'var(--kd9bd76)', weight:'700'};
+              const last=x.ms[x.ms.length-1];
+              return {val:y===2025&&qi===4?'N/A':'#'+last.r, sub:(y===2025&&qi===4?'Qtr not published · ':last.m+' month · qtr pending · ')+x.ms.map(m=>m.m+' '+m.r).join(' · '), color:'var(--kd9bd76)', weight:'700'}; }
+            const withQ=per.filter(x=>x.qr!=null);
+            if(withQ.length){ const best=withQ.reduce((a,b)=>b.qr<a.qr?b:a); return {val:'#'+best.qr+' '+best.name, sub:withQ.map(x=>x.name+' '+x.qr).join(' · '), color:'var(--kd9bd76)', weight:'700'}; }
+            const lm=per.map(x=>({name:x.name,r:x.ms[x.ms.length-1].r,m:x.ms[x.ms.length-1].m}));
+            const best=lm.reduce((a,b)=>b.r<a.r?b:a);
+            return {val:'#'+best.r+' '+best.name, sub:(y===2025&&qi===4?'Qtr N/A · ':'')+best.m+' month · '+lm.map(x=>x.name+' '+x.r).join(' · '), color:'var(--kd9bd76)', weight:'700'};
+          }) },
+        { label:'Total Profit', labelColor:'var(--ka89878)', cells: quarters.map(q=> cell(q.weeks?q.pr:null, v=>this.fFull2(v), 'var(--kf3ecd9)','800')) },
+        { label:'Total Turnover', labelColor:'var(--ka89878)', cells: quarters.map(q=> cell(q.weeks?q.to:null, v=>this.fFull2(v), 'var(--kf3ecd9)','800')) },
+        { label:'Return To Venue', labelColor:'var(--ka89878)', cells: quarters.map(q=> cell(q.weeks?q.rtv:null, v=>v.toFixed(2)+'%', 'var(--ke7d3a1)','800')) },
+        { label:'Profit +/−', labelColor:'var(--ka89878)', cells: quarters.map((q,i)=>{ const b=qBasis[i]; if(!q.weeks||!b.prevAvgPR) return {val:'n/a',color:'var(--k6e6655)',weight:'600'}; const g=(b.curAvgPR-b.prevAvgPR)/b.prevAvgPR*100; return {val:this.fSign2(g)+(b.lfl?' *':''), color:g>=0?GREEN:neg, weight:'700'}; }) },
+        { label:'Turnover +/−', labelColor:'var(--ka89878)', cells: quarters.map((q,i)=>{ const b=qBasis[i]; if(!q.weeks||!b.prevAvgTO) return {val:'n/a',color:'var(--k6e6655)',weight:'600'}; const g=(b.curAvgTO-b.prevAvgTO)/b.prevAvgTO*100; return {val:this.fSign2(g)+(b.lfl?' *':''), color:g>=0?GREEN:neg, weight:'700'}; }) },
+      ];
+      return { year:y, quarters, rows };
+    });
+
+    const rowLabelP = Q==='all' ? 'FY' : ('Q'+Q);
+    const footerNote = (D.footerNote||'');
+
+    return {
+      loading:false, ready:true,
+      hotelName:h.name,
+      eyebrow: (h.location? h.location+' Portfolio · ' : '')+h.venues.length+(h.venues.length===1?' Venue':' Venues'),
+      coverageNote, hasCoverageNote: !!coverageNote,
+      toggleTheme: ()=>{ const l=!this.state.light; document.documentElement.classList.toggle('ewc-light',l); try{localStorage.setItem('ewc-theme',l?'light':'dark');}catch(e){} this.setState({light:l}); },
+      themeLabel: this.state.light ? 'Dark mode' : 'Light mode',
+      subtitle: h.venues.length===1 ? (D.dataToLabel||'') : venues.length===h.venues.length ? (h.venues.length+' venues · combined') : (venues.length===1 ? venues[0].name : venues.map(v=>v.name).join(' + ')),
+      qFromOpts, qToOpts, qRangeLabel,
+      periodLabel: Q==='all' ? ('FY '+Y) : ('Q'+Q+' '+Y),
+      year:Y, prevYear:PY, rtv:cur.rtv.toFixed(1)+'%',
+      yearOpts, quarterOpts, venueOpts, kpiCards,
+      multiYearLines, yGrid, yAxisLabels, monthTicks, yearLegend,
+      rangeOpen: st.rangeOpen, toggleRange, rangeRows, resetRanges, rangeBtnBg,
+      compareGroups, multiVenue: h.venues.length>1,
+      partKind, partKindSingular, pieTO, piePR, pieTOTotal:this.fFull(cur.to), piePRTotal:this.fFull(cur.pr),
+      toLine:toP.line, toArea:toP.area, trendMax, trendTicks,
+      dayHeaders, curCells, prevCells, diffCells,
+      curRowLabel: rowLabelP+' '+Y, prevRowLabel: rowLabelP+' '+PY,
+      curTotal, prevTotal: hasPrev?prevTotal:'—', totalDiff:hasPrev?this.fSignFull(totDiff):'—', totalDiffColor: !hasPrev?'var(--k8a8068)':(totDiff>=0?GREEN:neg),
+      bestDayName:dnames[bi], bestDayVal:this.fFull(cd[bi]),
+      worstDayName:dnames[wi], worstDayVal:this.fFull(cd[wi]),
+      insights, summaryYears, footerNote, rankNote:(D.rankNote||''), hasDaily: cd.some(v=>v>0),
+      hoverVisible, hoverGuideX, hoverDots, hoverTooltipRows,
+      tooltipLeftPx, tooltipTopPx, tooltipHeaderLabel,
+      onChartMove, onChartLeave,
+      showWeeks: st.showWeeks, weeksRows, closeWeeks: ()=>this.setState({showWeeks:false}),
+    };
+  }
+}
+</script>
+
+
+</body></html>

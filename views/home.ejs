@@ -1,0 +1,86 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">Gaming Consultancy</p>
+      <h1>Specialist Advice for <em>Stronger Gaming Performance</em></h1>
+      <p>Elson White Consulting provides tailored gaming consultancy, performance analysis, and practical solutions to help venue owners and operators make informed decisions and maximise their gaming room potential.</p>
+      <div class="actions">
+        <a class="btn btn-gold" href="<%= href('/services') %>">Explore Our Services <%- icon('arrow') %></a>
+        <a class="btn btn-outline-light" href="<%= href('/login') %>"><%- icon('user') %>Member Login</a>
+      </div>
+    </div>
+  </div>
+  <%- include('partials/swoosh', { fill: '#F7F5F0' }) %>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-title caps"><h2>Gaming Advisory</h2></div>
+    <div class="cols3">
+      <article class="svc">
+        <div class="icon"><%- icon('chart') %></div>
+        <h3>Gaming Analysis<br>&amp; Reporting</h3>
+        <p>We provide detailed performance analysis of electronic gaming machines, helping venues understand game performance, identify opportunities, and make informed operational decisions.</p>
+        <p>Our reporting includes regular performance reviews, machine comparisons, and practical recommendations based on gaming figures and current industry trends.</p>
+      </article>
+      <article class="svc">
+        <div class="icon"><%- icon('desk') %></div>
+        <h3>Complete Gaming<br>Management</h3>
+        <p>We provide specialised gaming consultancy and operational support to assist venue owners and operators in managing their gaming operations effectively.</p>
+        <p>Our industry experience supports informed decision-making across gaming performance, machine selection, operational considerations, and regulatory requirements.</p>
+      </article>
+      <article class="svc">
+        <div class="icon"><%- icon('floorplan') %></div>
+        <h3>Gaming Room<br>Design &amp; Floorplan</h3>
+        <p>The layout and positioning of gaming machines can influence player flow, room functionality, and overall venue performance.</p>
+        <p>We provide practical advice on gaming room layouts, machine placement, and floorplan optimisation to help venues make the most of their gaming spaces.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section charcoal">
+  <div class="wrap">
+    <div class="section-title"><h2>Why Elson White Consulting</h2></div>
+    <div class="why">
+      <div><%- icon('trophy') %><b>Industry Experience &amp; Specialised Knowledge</b></div>
+      <div><%- icon('chart') %><b>Data-Driven Performance Insights</b></div>
+      <div><%- icon('target') %><b>Practical, Venue-Specific Recommendations</b></div>
+      <div><%- icon('layers') %><b>Ongoing Reporting &amp; Support</b></div>
+      <div><%- icon('people') %><b>A Professional &amp; Personalised Approach</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <div class="section-title" style="margin-bottom:22px"><h2>Your Venue. Your Insights. All in One Place.</h2></div>
+      <p>Access your latest gaming performance reports, weekly gaming figures, monthly rankings, and venue-specific insights through our secure member portal.</p>
+      <a class="btn btn-gold" href="<%= href('/login') %>"><%- icon('user') %>Access Member Portal</a>
+    </div>
+    <div class="mock" aria-label="Illustration of the member portal">
+      <div class="bar"><i></i><i></i><i></i></div>
+      <div class="grid">
+        <div class="side"><span>Dashboard</span><span>Game Performance</span><span>Gaming Figures</span><span>Monthly Rankings</span><span>Reports &amp; Resources</span><span>Ask a Question</span></div>
+        <div>
+          <div class="kpis"><div>Weekly turnover<b>$ ——</b></div><div>Weekly profit<b>$ ——</b></div><div>Monthly rank<b>#——</b></div></div>
+          <div class="bars"><i style="height:40%"></i><i style="height:52%"></i><i style="height:47%"></i><i style="height:60%"></i><i style="height:55%"></i><i style="height:68%"></i><i style="height:63%"></i><i style="height:74%"></i><i style="height:70%"></i><i style="height:82%"></i><i style="height:77%"></i><i style="height:90%"></i></div>
+          <p class="note">Illustration only — members see their own venue's figures after signing in.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="cta-copy"><h2>Let's Talk About Your Venue.</h2><p>Whether you're looking for gaming consultancy, performance reporting, or strategic support, our team is here to help.</p></div>
+    <a class="btn btn-gold" href="<%= href('/contact') %>"><%- icon('mail') %>Contact Our Team</a>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

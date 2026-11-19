@@ -1,0 +1,18 @@
+<%- include('partials/head') %>
+<body>
+<main class="auth" id="main">
+  <a class="brand" href="<%= href('/') %>"><img class="lockup" src="<%= href('/img/ewc-lockup.png') %>" alt="Elson White Consulting" width="308" height="72"></a>
+  <h1>Forgot Password</h1>
+  <p class="sub">Enter your username or email. We'll email you a link to set a new password.</p>
+  <form class="auth-card" method="post" action="<%= href('/forgot-password') %>">
+    <% if (sent) { %><div class="alert ok" role="status">If that account exists and has an email address on file, a reset link is on its way. It works for 1 hour.</div><% } %>
+    <input type="hidden" name="_form" value="<%= formToken() %>">
+    <div class="field"><%- icon('mail') %><label class="sr-only" for="identifier">Email or username</label>
+      <input id="identifier" name="identifier" placeholder="Email / Username" autocomplete="username" required></div>
+    <button class="btn btn-gold" type="submit">Send reset link</button>
+    <p class="note"><a class="gold" href="<%= href('/login') %>">Back to sign in</a></p>
+  </form>
+</main>
+<% if (preview) { %><script src="js/preview-api.js"></script><% } %>
+</body>
+</html>

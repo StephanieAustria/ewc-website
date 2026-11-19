@@ -1,0 +1,49 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+<% const types = ['Gaming Consultancy', 'Gaming Performance Reporting', 'Gaming Room Design', 'General Enquiry', 'Other'];
+   const f = Object.assign({ type: query.type || '', subject: query.subject || '' }, form); %>
+
+<section class="hero small">
+  <div class="wrap"><div class="hero-copy">
+    <p class="eyebrow">Contact Us</p>
+    <h1>Let's Discuss <em>Your Venue</em></h1>
+    <p>Whether you're looking for gaming consultancy, performance reporting, or strategic support, our team is here to help.</p>
+  </div></div>
+  <%- include('partials/swoosh', { fill: '#F7F5F0' }) %>
+</section>
+
+<section class="section">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="section-title" style="margin-bottom:18px"><h2>Get in Touch</h2></div>
+      <p class="lead">Complete the enquiry form and our team will be in touch to discuss how we can support your venue.</p>
+      <div class="contact-item"><%- icon('mail') %><div><b>Email Us</b><a href="mailto:admin@elsonwhiteconsulting.com.au">admin@elsonwhiteconsulting.com.au</a></div></div>
+    </div>
+    <div>
+      <h2 style="font-size:32px;margin-bottom:22px">Enquiry Form</h2>
+      <% if (query.sent) { %>
+        <div class="alert ok" role="status"><b>Thank you — your enquiry has been sent.</b><br>Our team has received your message at admin@elsonwhiteconsulting.com.au and will be in touch.</div>
+      <% } %>
+      <% if (errors && errors.length) { %>
+        <div class="alert err" role="alert"><b>Please check the form:</b><ul><% errors.forEach(e => { %><li><%= e %></li><% }) %></ul></div>
+      <% } %>
+      <form method="post" action="<%= href('/contact') %>" class="form-grid" novalidate data-validate>
+        <input type="hidden" name="_form" value="<%= formToken() %>">
+        <input type="hidden" name="startedAt" value="<%= startedAt %>">
+        <div class="hp" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+        <div><label for="name">Full Name <span class="req">*</span></label><input id="name" name="name" required autocomplete="name" value="<%= f.name || '' %>" placeholder="Enter your full name"></div>
+        <div><label for="company">Company / Venue <span class="req">*</span></label><input id="company" name="company" required autocomplete="organization" value="<%= f.company || '' %>" placeholder="Enter company or venue name"></div>
+        <div><label for="email">Email Address <span class="req">*</span></label><input id="email" name="email" type="email" required autocomplete="email" value="<%= f.email || '' %>" placeholder="Enter your email address"></div>
+        <div><label for="phone">Phone Number <span class="opt">(optional)</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" value="<%= f.phone || '' %>" placeholder="Enter phone number"></div>
+        <div class="full"><label for="type">Enquiry Type <span class="req">*</span></label>
+          <select id="type" name="type" required><option value="">Select an enquiry type</option>
+            <% types.forEach(t => { %><option <%= f.type === t ? 'selected' : '' %>><%= t %></option><% }) %></select></div>
+        <div class="full"><label for="subject">Subject <span class="req">*</span></label><input id="subject" name="subject" required value="<%= f.subject || '' %>" placeholder="Enter a subject"></div>
+        <div class="full"><label for="message">Message <span class="req">*</span></label><textarea id="message" name="message" required placeholder="Tell us more about your enquiry…"><%= f.message || '' %></textarea></div>
+        <div class="full" style="display:flex;justify-content:flex-end"><button class="btn btn-gold" type="submit"><%- icon('send') %>Send Enquiry</button></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

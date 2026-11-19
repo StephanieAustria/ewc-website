@@ -1,0 +1,18 @@
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="<%= href('/') %>" aria-label="Elson White Consulting home">
+      <img class="lockup" src="<%= href('/img/ewc-lockup.png') %>" alt="Elson White Consulting" width="240" height="56">
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <% const items = [['/', 'Home'], ['/about', 'About Us'], ['/services', 'Services'], ['/team', 'Our Team'], ['/contact', 'Contact'], ['/portal', 'Member Portal']]; %>
+      <% items.forEach(([p, label]) => { %>
+        <a href="<%= href(p) %>" <%- path === p ? 'aria-current="page"' : '' %>><%= label %></a>
+      <% }) %>
+      <a class="btn btn-outline" href="<%= href(user ? '/portal' : '/login') %>"><%- icon('user') %><%= user ? 'My Portal' : 'Member Login' %></a>
+    </nav>
+  </div>
+</header>
+<main id="main">

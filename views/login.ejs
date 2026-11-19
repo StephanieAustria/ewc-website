@@ -1,0 +1,31 @@
+<%- include('partials/head') %>
+<body>
+<main class="auth" id="main">
+  <a class="brand" href="<%= href('/') %>"><img class="lockup" src="<%= href('/img/ewc-lockup.png') %>" alt="Elson White Consulting" width="308" height="72"></a>
+  <h1>Member Login</h1>
+  <p class="sub">Sign in to access your venue reports and insights.</p>
+  <form class="auth-card" method="post" action="<%= href('/login') %><%= query.next ? '?next=' + encodeURIComponent(query.next) : '' %>" data-login>
+    <% if (error) { %><div class="alert err" role="alert"><%= error %></div><% } %>
+    <% if (query.set) { %><div class="alert ok" role="status">Your password is set. Sign in with your new password.</div><% } %>
+    <% if (query.out) { %><div class="alert ok" role="status">You have signed out.</div><% } %>
+    <input type="hidden" name="_form" value="<%= formToken() %>">
+    <div class="field"><%- icon('mail') %><label class="sr-only" for="identifier">Email or username</label>
+      <input id="identifier" name="identifier" placeholder="Email / Username" autocomplete="username" required value="<%= identifier || '' %>"></div>
+    <div class="field"><%- icon('lock') %><label class="sr-only" for="password">Password</label>
+      <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" required>
+      <button class="peek" type="button" aria-label="Show password" data-peek="password"><%- icon('eye') %></button></div>
+    <div class="auth-row">
+      <label class="check"><input type="checkbox" name="remember"> Remember me</label>
+      <a class="gold" href="<%= href('/forgot-password') %>">Forgot password?</a>
+    </div>
+    <button class="btn btn-gold" type="submit"><%- icon('login') %>Login</button>
+    <% if (preview) { %><p class="note">Preview logins: <b>westrydehotel</b> / wrh123 (venue) · <b>candice.elsonwhite</b> / preview-admin or <b>Stephanie.EWC</b> / stephanie123 (admin, all venues)</p><% } %>
+  </form>
+  <p class="help">Need Help?</p>
+  <a class="gold-link" href="<%= href('/contact') %>?type=General%20Enquiry&amp;subject=Member%20portal%20access" style="margin-top:10px;display:inline-flex;gap:10px;align-items:center"><%- icon('mail').replace('<svg ', '<svg width="22" height="22" ') %>Contact Support</a>
+  <a class="gold-link" href="<%= href('/') %>" style="margin-top:26px;font-size:15px">← Back to website</a>
+</main>
+<% if (preview) { %><script src="js/preview-api.js"></script><% } %>
+<script src="<%= href('/js/site.js') %>"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><%= title %> | Elson White Consulting</title>
+<meta name="description" content="<%= typeof description !== 'undefined' ? description : 'Elson White Consulting provides tailored gaming consultancy, performance analysis and practical solutions for venue owners and operators.' %>">
+<meta property="og:title" content="<%= title %> | Elson White Consulting">
+<meta property="og:type" content="website">
+<link rel="icon" href="<%= href('/img/favicon.png') %>">
+<link rel="stylesheet" href="<%= href('/css/site.css') %>">
+<% if (typeof portal !== 'undefined' && portal) { %><link rel="stylesheet" href="<%= href('/css/portal.css') %>"><% } %>
+</head>
