@@ -475,7 +475,7 @@ body.show-portal .site-header,body.show-portal .site-footer{display:none}
 body.show-portal{background:#F7F5F0;color:#141414;font-size:15.5px}
 .preview-ribbon{background:#2a2210;color:#f1e3bd;border-bottom:1px solid #6b5626;font-size:13.5px;padding:8px max(16px,env(safe-area-inset-right,0px)) 8px max(16px,env(safe-area-inset-left,0px));text-align:center}
 body.show-portal .preview-ribbon{display:none}</style>
-<div class="preview-ribbon">Preview of the Elson White Consulting website · Member Login: westrydehotel / wrh123 (venue) · Stephanie.EWC / stephanie123 or candice.elsonwhite / preview-admin (admin)</div>
+<div class="preview-ribbon">Preview of the Elson White Consulting website · Member Login: marlowhotel / mhg.123 (group) · westrydehotel / wrh123 (venue) · Stephanie.EWC / stephanie123 or candice.elsonwhite / preview-admin (admin)</div>
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="#home" aria-label="Elson White Consulting home">
@@ -908,7 +908,7 @@ body.show-portal .preview-ribbon{display:none}</style>
       <a class="gold" href="#forgot">Forgot password?</a>
     </div>
     <button class="btn btn-gold" type="submit"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M28 6h12v36H28"/><path d="M4 24h26M20 14l10 10-10 10"/></svg>Login</button>
-    <p class="note">Preview logins: <b>westrydehotel</b> / wrh123 (venue) · <b>candice.elsonwhite</b> / preview-admin or <b>Stephanie.EWC</b> / stephanie123 (admin, all venues)</p>
+    <p class="note">Preview logins: <b>marlowhotel</b> / mhg.123 (group) · <b>westrydehotel</b> / wrh123 (venue) · <b>candice.elsonwhite</b> / preview-admin or <b>Stephanie.EWC</b> / stephanie123 (admin, all venues)</p>
   </form>
   <p class="help">Need Help?</p>
   <a class="gold-link" href="#contact" style="margin-top:10px;display:inline-flex;gap:10px;align-items:center"><svg width="22" height="22" class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="40" height="28" rx="2"/><path d="M4 12l20 15 20-15"/></svg>Contact Support</a>
@@ -994,6 +994,7 @@ body.show-portal .preview-ribbon{display:none}</style>
 (function () {
   window.EWC_PREVIEW = true;
   var USERS = {
+    'marlowhotel': { pw: 'mhg.123', id: 4, username: 'marlowhotel', name: 'Marlow Hotel Group', role: 'group', group: 'Marlow Hotel Group', email: null },
     'westrydehotel': { pw: 'wrh123', id: 2, username: 'westrydehotel', name: 'West Ryde Hotel', role: 'venue', venue: 'West Ryde Hotel', group: 'West Ryde Hotel', email: null },
     'stephanie.ewc': { pw: 'stephanie123', id: 3, username: 'Stephanie.EWC', name: 'Stephanie Manuel', role: 'admin', email: null, tools: ['email-generator', 'ranking-tools', 'game-performance'] },
     'candice.elsonwhite': { pw: 'preview-admin', id: 1, username: 'candice.elsonwhite', name: 'Candice Elson-White', role: 'admin', email: 'admin@elsonwhiteconsulting.com.au', tools: ['client-tools', 'quickchange-email', 'ranking-tools'] },
@@ -1036,7 +1037,7 @@ body.show-portal .preview-ribbon{display:none}</style>
     Object.keys(D.competitors).forEach(function (n) { compByName[n] = D.competitors[n]; });
   }
   var ENQ = [];
-  function allowed(u) { return D.venues.filter(function (v) { return u.role === 'admin' || (u.role === 'venue' && v.name === u.venue); }); }
+  function allowed(u) { return D.venues.filter(function (v) { return u.role === 'admin' || (u.role === 'venue' && v.name === u.venue) || (u.role === 'group' && v.group === u.group); }); }
   function q(path) { var o = {}; (path.split('?')[1] || '').split('&').forEach(function (kv) { if (kv) { var p = kv.split('='); o[p[0]] = decodeURIComponent(p[1] || ''); } }); return o; }
   function err(m, s) { var e = new Error(m); e.status = s; return Promise.reject(e); }
   var CATL = { gp_weekly: 'Game Performance · Weekly', gp_monthly: 'Game Performance · Monthly', figures: 'Gaming Figures', rankings: 'Monthly Rankings', resource: 'Resources' };
@@ -1114,6 +1115,7 @@ body.show-portal .preview-ribbon{display:none}</style>
       case '/admin/users': return Promise.resolve([
         { id: 1, username: 'candice.elsonwhite', email: 'admin@elsonwhiteconsulting.com.au', name: 'Candice Elson-White', role: 'admin', active: 1, must_change: 0, has_password: 1, last_login: 'today', tools: toolsOf(USERS['candice.elsonwhite']) },
         { id: 3, username: 'Stephanie.EWC', email: null, name: 'Stephanie Manuel', role: 'admin', active: 1, must_change: 0, has_password: 1, last_login: 'today', tools: toolsOf(USERS['stephanie.ewc']) },
+        { id: 4, username: 'marlowhotel', email: null, name: 'Marlow Hotel Group', role: 'group', group_name: 'Marlow Hotel Group', active: 1, must_change: 0, has_password: 1, last_login: null, tools: [] },
         { id: 2, username: 'westrydehotel', email: null, name: 'West Ryde Hotel', role: 'venue', venue_name: 'West Ryde Hotel', active: 1, must_change: 0, has_password: 1, last_login: null, tools: [] }]);
       case '/admin/enquiries': return Promise.resolve(ENQ);
       case '/admin/tools-all': return Promise.resolve((D.tools || []).map(function (t) { return { slug: t.slug, name: t.nav }; }));
