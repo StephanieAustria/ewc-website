@@ -123,7 +123,7 @@ function ensureUser({ username, name, email, role, group, venue, password, mustC
 
 const adminPw = process.env.INITIAL_ADMIN_PASSWORD || crypto.randomBytes(9).toString('base64url');
 const createdAdmin = ensureUser({ username: 'candice.elsonwhite', name: 'Candice Elson-White', email: 'admin@elsonwhiteconsulting.com.au',
-  role: 'admin', password: adminPw, mustChange: true });
+  role: 'admin', password: adminPw, mustChange: process.env.ADMIN_MUST_CHANGE !== 'no' });
 ensureUser({ username: 'Stephanie.EWC', name: 'Stephanie Manuel', role: 'admin',
   password: process.env.STEPHANIE_PASSWORD || 'stephanie123', mustChange: false });
 ensureUser({ username: 'westrydehotel', name: 'West Ryde Hotel', role: 'venue', venue: 'West Ryde Hotel',
